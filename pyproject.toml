@@ -3,8 +3,8 @@ requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "cn-data-adapters"
-version = "0.2.0"
-description = "基金单位净值采集、原生档案标准化和冻结响应重放，保留来源、取得时间与未核事项。"
+version = "0.3.0"
+description = "研究资料采集与储备：净值、日行情、年鉴原表、官方发布表格、国际年度序列及冻结回放。"
 requires-python = ">=3.10"
 dependencies = []
 license = "MIT"
@@ -17,6 +17,6 @@ cn-data-adapters = "cn_data_adapters.__main__:main"
 include = ["cn_data_adapters*"]
 
 [tool.setuptools.data-files]
-"share/cn-data-adapters" = ["DATA_ACQUISITION.md", "README.en.md", "CHANGELOG.md", "VALIDATION.md", "AUDIT_SCOPE.md", "FORMAT_SCOPE.md", "README.md", "SKILL.md", "BEGINNER.md", "THIRD_PARTY_NOTICES.md"]
+"share/cn-data-adapters" = ["YEARBOOK.md", "DATA_ACQUISITION.md", "README.en.md", "CHANGELOG.md", "VALIDATION.md", "AUDIT_SCOPE.md", "FORMAT_SCOPE.md", "README.md", "SKILL.md", "BEGINNER.md", "THIRD_PARTY_NOTICES.md"]
 
-"share/cn-data-adapters/examples" = ["examples/tables-teaching.json"]
+"share/cn-data-adapters/examples" = ["examples/tables-teaching.json", "examples/resident-income-request.json", "examples/resident-income-mapping.json", "examples/worldbank-population-request.json"]

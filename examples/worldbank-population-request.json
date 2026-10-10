@@ -1,0 +1,10 @@
+{
+  "countries": [
+    "CHN",
+    "USA",
+    "JPN"
+  ],
+  "indicator": "SP.POP.TOTL",
+  "start": 2020,
+  "end": 2024
+}
