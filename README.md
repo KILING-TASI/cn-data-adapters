@@ -37,7 +37,7 @@ Windows运行 `Start-Demo.cmd`，也可执行 `python try_demo.py`；Linux/macOS
 [独立使用与真实渠道验收范围](VALIDATION.md)。
 
 
-当前版本：[v0.1.0](https://github.com/KILING-TASI/cn-data-adapters/releases/tag/v0.1.0)。发布页提供完整源码、wheel、sdist与校验清单；三个包仅用标准库，pip安装不自动注册Skill。
+当前版本：[v0.2.0](https://github.com/KILING-TASI/cn-data-adapters/releases/tag/v0.2.0)。发布页提供完整源码、wheel、sdist与校验清单；三个包仅用标准库，pip安装不自动注册Skill。
 
 ## v0.2.0 缺口修正与数据入口
 
