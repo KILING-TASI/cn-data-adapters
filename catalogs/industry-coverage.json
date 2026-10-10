@@ -1,0 +1,254 @@
+{
+  "schemaVersion": "industry-acquisition-coverage/1",
+  "items": [
+    {
+      "classificationVersion": "SW2021",
+      "code": "110000",
+      "name": "农林牧渔",
+      "researchMetrics": "出栏/产量、存栏、单位成本、售价、饲料成本、资本开支；口径与生长阶段明确",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "220000",
+      "name": "基础化工",
+      "researchMetrics": "产品价格、原料及能源、库存、实际投产与开工；不以产品涨价替代利润测算",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "230000",
+      "name": "钢铁",
+      "researchMetrics": "产销、品种价差、库存、利用率、资本开支；区分现货与实际结算",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "240000",
+      "name": "有色金属",
+      "researchMetrics": "产量、实际售价、单位成本、加工费、库存、项目进展及套保说明",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "270000",
+      "name": "电子",
+      "researchMetrics": "终端需求、订单、库存、售价、良率和投产；客户新闻不替代公司订单",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "280000",
+      "name": "汽车",
+      "researchMetrics": "批发/终端/出口销量、库存、折扣、毛利、现金回款；新能源与燃油业务分开",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "330000",
+      "name": "家用电器",
+      "researchMetrics": "同口径销量、单价、渠道库存、费用、原材料、出口及回款",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "340000",
+      "name": "食品饮料",
+      "researchMetrics": "销量、售价、折扣、终端动销、预收、库存及现金；不把发货等同消费",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "350000",
+      "name": "纺织服饰",
+      "researchMetrics": "订单/销售、同店、面积、周转、折扣及回款；指标分母和期间明确",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "360000",
+      "name": "轻工制造",
+      "researchMetrics": "分产品销量、单价、原料价差、库存、渠道订单、资本开支与应收",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "370000",
+      "name": "医药生物",
+      "researchMetrics": "产品收入、销量、研发里程碑、有效政策、竞争及回款；未公开数据留空",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "410000",
+      "name": "公用事业",
+      "researchMetrics": "电量/利用小时/交易电价、入炉成本、来水、供气水量、应收与投产",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "420000",
+      "name": "交通运输",
+      "researchMetrics": "运量/周转、客座率、票价、吨海里、合同、物流单票成本与回款",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "430000",
+      "name": "房地产",
+      "researchMetrics": "项目销售回款、交付、融资、现金限制、租赁和存货；NAV不保证变现",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "450000",
+      "name": "商贸零售",
+      "researchMetrics": "同店、终端销售、租售、库存、账期和回款；平台交易额不当收入",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "460000",
+      "name": "社会服务",
+      "researchMetrics": "酒店入住率/房价、客流、同店、门店、人工租金、资本开支；业务不同不共用指标",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "480000",
+      "name": "银行",
+      "researchMetrics": "净息差、不良及迁徙、拨备、资本、存款和贷款结构；监管定义须当期核对",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "490000",
+      "name": "非银金融",
+      "researchMetrics": "证券业务收入/资产规模，保险NBV/承保/赔付，资本与信用；统一定义后比较",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "510000",
+      "name": "综合",
+      "researchMetrics": "分部收入利润现金、资本开支、持股及债务；缺分部不强行做SOTP",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "610000",
+      "name": "建筑材料",
+      "researchMetrics": "区域价格、产销、库存、成本、利用率、应收账龄及减值",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "620000",
+      "name": "建筑装饰",
+      "researchMetrics": "订单转化、交付、付款条款、现金及账龄；合同金额不计入当期收入",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "630000",
+      "name": "电力设备",
+      "researchMetrics": "招标中标、交付、销量价格、利用率、研发、应收和资本开支",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "640000",
+      "name": "机械设备",
+      "researchMetrics": "在手/新增订单、交付、产品结构、利用率、应收及售后服务",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "650000",
+      "name": "国防军工",
+      "researchMetrics": "可公开订单、交付确认、合同负债、应收、研发和资本开支；不推测未公开军品数量",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "710000",
+      "name": "计算机",
+      "researchMetrics": "订单、收入确认、续约留存、费用、现金回款；未披露SaaS指标不补造",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "720000",
+      "name": "传媒",
+      "researchMetrics": "产品收入、用户及付费、投放、上线、版权、费用与回款",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "730000",
+      "name": "通信",
+      "researchMetrics": "ARPU/用户、客户投资、订单交付、毛利、研发、现金与资本开支",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "740000",
+      "name": "煤炭",
+      "researchMetrics": "产销、长协实际结算、单位成本、库存、运输、现金及矿井建设",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "750000",
+      "name": "石油石化",
+      "researchMetrics": "产量、实际售价、加工量、价差、库存、资本开支与现金；不以油价代表全板块盈利",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "760000",
+      "name": "环保",
+      "researchMetrics": "项目进展、处理量、收费、合同资产、应收、经营现金及期限",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    },
+    {
+      "classificationVersion": "SW2021",
+      "code": "770000",
+      "name": "美容护理",
+      "researchMetrics": "终端动销、折扣、费用、渠道库存、复购及资质；医疗美容不套一般消费品规则",
+      "dedicatedAcquisition": "not-complete",
+      "existingOverlap": "yearbook originals / explicitly selected official tables; verify metric, period and regional scope per case"
+    }
+  ],
+  "scope": "需求与缺口登记，不是31行业实时采集已接通，不生成统一景气分"
+}
