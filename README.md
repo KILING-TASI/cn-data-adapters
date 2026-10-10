@@ -38,3 +38,9 @@ Windows运行 `Start-Demo.cmd`，也可执行 `python try_demo.py`；Linux/macOS
 
 
 当前版本：[v0.1.0](https://github.com/KILING-TASI/cn-data-adapters/releases/tag/v0.1.0)。发布页提供完整源码、wheel、sdist与校验清单；三个包仅用标准库，pip安装不自动注册Skill。
+
+## v0.2.0 缺口修正与数据入口
+
+清理重复使用者页面的发布残留，新增英文项目入口及版本变更索引；独立使用和历史冻结记录保持。新增沪深股票/ETF日线响应留档、重放、显式因子声明下MarketLens CSV导出及官方URL原始响应捕获。
+
+[English introduction](README.en.md) · [版本变更](CHANGELOG.md)。

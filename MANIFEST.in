@@ -17,3 +17,7 @@ include AUDIT_SCOPE.md
 include VALIDATION.md
 
 recursive-include validation *.json
+
+include README.en.md CHANGELOG.md
+
+include DATA_ACQUISITION.md
