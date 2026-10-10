@@ -36,8 +36,6 @@ Windows运行 `Start-Demo.cmd`，也可执行 `python try_demo.py`；Linux/macOS
 其他问题可看[工具导航](https://github.com/KILING-TASI/research-workbench/blob/main/references/tool-navigation.md)。
 
 
-
-
 共同采集与观察表的单位、时间及版本范围见 [FORMAT_SCOPE.md](FORMAT_SCOPE.md)。宏观、微观和规则事件保留各自口径，不混作净值。
 
 
@@ -47,14 +45,16 @@ Windows运行 `Start-Demo.cmd`，也可执行 `python try_demo.py`；Linux/macOS
 [独立使用与真实渠道验收范围](VALIDATION.md)。
 
 
-当前版本：[v0.3.0](https://github.com/KILING-TASI/cn-data-adapters/releases/tag/v0.3.0)。发布页提供完整源码、wheel、sdist与校验清单；三个包仅用标准库，pip安装不自动注册Skill。
-
-## v0.2.0 缺口修正与数据入口
-
-清理重复使用者页面的发布残留，新增英文项目入口及版本变更索引；独立使用和历史冻结记录保持。新增沪深股票/ETF日线响应留档、重放、显式因子声明下MarketLens CSV导出及官方URL原始响应捕获。
-
-[English introduction](README.en.md) · [版本变更](CHANGELOG.md)。
+当前版本：[v0.4.0](https://github.com/KILING-TASI/cn-data-adapters/releases/tag/v0.4.0)。发布页提供完整源码、wheel、sdist与校验清单；三个包仅用标准库，pip安装不自动注册Skill。
 
 ## 年鉴与官方统计发布
 
 年鉴全章节原表、发布表格提取及明确数值映射见 [YEARBOOK.md](YEARBOOK.md)。包括暂未用于专业分析的章节；目录和原表覆盖不等于数值覆盖。
+
+## 参与、更新与清理
+
+[贡献说明](CONTRIBUTING.md) · [安全反馈](SECURITY.md) · [更新、缓存与卸载](LIFECYCLE.md)。
+
+## 本地校验与行业地区资料
+
+[契约合并与旧命令迁移](CONTRACT_MIGRATION.md) · [城市、分省、行业目录与运行成本](REGIONAL_DATA.md)。

@@ -43,7 +43,10 @@ def publish(result, output, *, raw=None, native=None):
 
 def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv
-    routes={'yearbook':'yearbook','bulletin':'bulletin','worldbank':'worldbank','market':'market','source-archive':'source_archive','tables':'tables'}
+    if argv and argv[0] in ('validate','validate-table'):
+        from .contracts.__main__ import main as validate_main
+        return validate_main(argv)
+    routes={'housing':'housing','nbs':'nbs','measure':'measure','inventory':'inventory','contracts':'contracts.__main__','yearbook':'yearbook','bulletin':'bulletin','worldbank':'worldbank','market':'market','source-archive':'source_archive','tables':'tables'}
     if argv and argv[0] in routes:
         from importlib import import_module
         return import_module('.'+routes[argv[0]],__package__).main(argv[1:])
