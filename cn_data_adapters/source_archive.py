@@ -9,6 +9,17 @@ from .market import publish
 from ._contract import loads
 
 HOSTS={
+ 'stats':{'www.stats.gov.cn','data.stats.gov.cn'},
+ 'energy':{'www.nea.gov.cn'},'agriculture':{'www.moa.gov.cn'},
+ 'transport':{'www.mot.gov.cn'},'finance':{'www.mof.gov.cn','gks.mof.gov.cn'},
+ 'pbc':{'www.pbc.gov.cn'},'education':{'www.moe.gov.cn'},
+ 'health':{'www.nhc.gov.cn'},'environment':{'www.mee.gov.cn'},
+ 'water':{'www.mwr.gov.cn'},'social-security':{'www.mohrss.gov.cn'},
+ 'postal':{'www.spb.gov.cn'},'industry':{'www.miit.gov.cn'},
+ 'culture':{'www.mct.gov.cn'},'patent':{'www.cnipa.gov.cn'},
+ 'hk-statistics':{'www.censtatd.gov.hk'},'macao-statistics':{'www.dsec.gov.mo'},
+ 'world-bank':{'api.worldbank.org','data.worldbank.org'},
+ 'imf':{'www.imf.org','data.imf.org'},
  'chinaclear':{'www.chinaclear.cn','m.chinaclear.cn'},
  'chinabond':{'www.chinabond.com.cn','yield.chinabond.com.cn','indices.chinabond.com.cn','valuation.chinabond.com.cn'},
  'shclearing':{'www.shclearing.com','www.shclearing.com.cn'},

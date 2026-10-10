@@ -19,3 +19,7 @@ source.json提供sourceId、url、purpose。来源ID支持chinaclear/chinabond/s
 ## 后续采集优先级
 
 先补公告目录与业绩预告/股东户数字段，再逐源研究融资、ETF份额、交易榜单、海关/外管局和指数成分；A股XBRL与信用曲线另做专业适配和权限核验。SEC CompanyFacts JSON解析不等于通用XBRL解析。中债曲线数据不自动等于转债含权/OAS模型。
+
+## 年鉴与官方统计发布
+
+年鉴全章节原表、发布表格提取及明确数值映射见 [YEARBOOK.md](YEARBOOK.md)。包括暂未用于专业分析的章节；目录和原表覆盖不等于数值覆盖。

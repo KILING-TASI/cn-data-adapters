@@ -17,3 +17,7 @@ Use a new output directory. Teaching data is synthetic; successful software exec
 ## Boundaries and rights
 
 Each repository works independently; optional cross-repository calls need explicit configuration. Missing evidence stays unknown. No trade execution, profit guarantee, or institutional compliance certification is provided. Original code is MIT; third-party licenses and source-data rights remain separate. Do not redistribute source documents or data solely because the software uses MIT.
+
+## Yearbooks and official statistics
+
+See [YEARBOOK.md](YEARBOOK.md) for all-chapter yearbook discovery, bounded original-table archives and explicit HTML cell mappings. Archived images are not structured numerical observations.

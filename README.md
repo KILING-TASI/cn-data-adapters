@@ -1,6 +1,16 @@
 # 研究数据采集与重放
 
-基金单位净值采集、原生档案标准化和冻结响应重放，保留来源、取得时间与未核事项。
+采集与储备研究资料，支持基金净值、沪深日行情、年鉴全章节原表、官方发布表格与世界银行年度序列。保留来源、取得时间、版本和未知事项；当前专业工具未使用的数据也可独立留档。
+
+| 想取得什么 | 安装后入口 | 当前结果范围 |
+|---|---|---|
+| 年鉴各章节及国际附录 | `cn-data-adapters yearbook --help` | 目录与限定原表留档，图片尚未数值化 |
+| 官方HTML发布表格 | `cn-data-adapters bulletin --help` | 单元格提取与明确映射；不猜单位/统计期 |
+| 国际年度序列 | `cn-data-adapters worldbank --help` | WDI指定指标/地区/年度与冻结回放 |
+| 沪深股票、ETF日行情 | `cn-data-adapters market --help` | 限定日线、未知成交单位保留 |
+| 其他官方公开资料 | `cn-data-adapters source-archive --help` | 明确URL原始响应，不等于专用接口接通 |
+
+各入口可独立使用，原始资料保留本地；真实成功和失败范围见 [VALIDATION.md](VALIDATION.md)。
 
 ## 先试一次
 
@@ -37,10 +47,14 @@ Windows运行 `Start-Demo.cmd`，也可执行 `python try_demo.py`；Linux/macOS
 [独立使用与真实渠道验收范围](VALIDATION.md)。
 
 
-当前版本：[v0.2.0](https://github.com/KILING-TASI/cn-data-adapters/releases/tag/v0.2.0)。发布页提供完整源码、wheel、sdist与校验清单；三个包仅用标准库，pip安装不自动注册Skill。
+当前版本：[v0.3.0](https://github.com/KILING-TASI/cn-data-adapters/releases/tag/v0.3.0)。发布页提供完整源码、wheel、sdist与校验清单；三个包仅用标准库，pip安装不自动注册Skill。
 
 ## v0.2.0 缺口修正与数据入口
 
 清理重复使用者页面的发布残留，新增英文项目入口及版本变更索引；独立使用和历史冻结记录保持。新增沪深股票/ETF日线响应留档、重放、显式因子声明下MarketLens CSV导出及官方URL原始响应捕获。
 
 [English introduction](README.en.md) · [版本变更](CHANGELOG.md)。
+
+## 年鉴与官方统计发布
+
+年鉴全章节原表、发布表格提取及明确数值映射见 [YEARBOOK.md](YEARBOOK.md)。包括暂未用于专业分析的章节；目录和原表覆盖不等于数值覆盖。

@@ -1,0 +1,32 @@
+[
+  {
+    "indicatorId": "disposable_income",
+    "tableIndex": 0,
+    "rowLabel": "（一）全国居民人均可支配收入",
+    "columnIndex": 1,
+    "expectedHeader": "绝对量（元）",
+    "period": "2025-01/2025-12",
+    "unit": "CNY/person",
+    "scope": "全国居民"
+  },
+  {
+    "indicatorId": "disposable_income_median",
+    "tableIndex": 0,
+    "rowLabel": "（二）全国居民人均可支配收入中位数",
+    "columnIndex": 1,
+    "expectedHeader": "绝对量（元）",
+    "period": "2025-01/2025-12",
+    "unit": "CNY/person",
+    "scope": "全国居民"
+  },
+  {
+    "indicatorId": "consumption_expenditure",
+    "tableIndex": 0,
+    "rowLabel": "（三）全国居民人均消费支出",
+    "columnIndex": 1,
+    "expectedHeader": "绝对量（元）",
+    "period": "2025-01/2025-12",
+    "unit": "CNY/person",
+    "scope": "全国居民"
+  }
+]

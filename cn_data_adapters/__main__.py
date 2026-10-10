@@ -42,9 +42,14 @@ def publish(result, output, *, raw=None, native=None):
             shutil.rmtree(stage)
 
 def main(argv=None):
+    argv = sys.argv[1:] if argv is None else argv
+    routes={'yearbook':'yearbook','bulletin':'bulletin','worldbank':'worldbank','market':'market','source-archive':'source_archive','tables':'tables'}
+    if argv and argv[0] in routes:
+        from importlib import import_module
+        return import_module('.'+routes[argv[0]],__package__).main(argv[1:])
     for stream in (sys.stdout,sys.stderr):
         if hasattr(stream,'reconfigure'):stream.reconfigure(encoding='utf-8')
-    parser=argparse.ArgumentParser(description='基金净值标准化采集、原生档案转换与冻结响应重放；默认离线')
+    parser=argparse.ArgumentParser(description='研究资料采集与冻结重放；默认离线',epilog='其他入口：yearbook 年鉴、bulletin 发布表格、worldbank 国际年度序列、market 日行情、source-archive 官方URL、tables 本地表格。各入口后加 --help。')
     parser.add_argument('command',choices=['collect','normalize','replay','validate','demo'])
     parser.add_argument('--request',type=Path);parser.add_argument('--input',type=Path)
     parser.add_argument('--raw',type=Path);parser.add_argument('--raw-directory',type=Path)
