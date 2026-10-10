@@ -19,6 +19,8 @@ HOSTS={
  'cninfo':{'www.cninfo.com.cn','static.cninfo.com.cn'}}
 
 def main(argv=None):
+ for stream in (sys.stdout,sys.stderr):
+  if hasattr(stream,'reconfigure'):stream.reconfigure(encoding='utf-8')
  p=argparse.ArgumentParser(description='明确官方URL的公开原始响应留档；不自动取得全量证券数据或解释PDF')
  p.add_argument('command',choices=['capture','replay']);p.add_argument('--input',type=Path,required=True);p.add_argument('--raw',type=Path);p.add_argument('--online',action='store_true');p.add_argument('--out-dir',type=Path,required=True);a=p.parse_args(argv)
  try:

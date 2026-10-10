@@ -87,6 +87,8 @@ def publish(out,spec,snapshot,raw,decl=None):
         if stage.exists():shutil.rmtree(stage)
 
 def main(argv=None):
+    for stream in (sys.stdout,sys.stderr):
+        if hasattr(stream,'reconfigure'):stream.reconfigure(encoding='utf-8')
     p=argparse.ArgumentParser(description='沪深股票/ETF日线采集、冻结重放及MarketLens行情CSV；不自动复权')
     p.add_argument('command',choices=['collect','parse','replay','export']);p.add_argument('--input',type=Path,required=True);p.add_argument('--raw',type=Path);p.add_argument('--declaration',type=Path);p.add_argument('--retrieved-at');p.add_argument('--out-dir',type=Path,required=True);p.add_argument('--online',action='store_true');a=p.parse_args(argv)
     try:
