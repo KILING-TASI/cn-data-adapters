@@ -17,6 +17,6 @@ cn-data-adapters = "cn_data_adapters.__main__:main"
 include = ["cn_data_adapters*"]
 
 [tool.setuptools.data-files]
-"share/cn-data-adapters" = ["VALIDATION.md", "AUDIT_SCOPE.md", "FORMAT_SCOPE.md", "README.md", "SKILL.md", "BEGINNER.md", "USER_SCENARIOS.md", "THIRD_PARTY_NOTICES.md"]
+"share/cn-data-adapters" = ["VALIDATION.md", "AUDIT_SCOPE.md", "FORMAT_SCOPE.md", "README.md", "SKILL.md", "BEGINNER.md", "THIRD_PARTY_NOTICES.md"]
 
 "share/cn-data-adapters/examples" = ["examples/tables-teaching.json"]

@@ -26,7 +26,6 @@ Windows运行 `Start-Demo.cmd`，也可执行 `python try_demo.py`；Linux/macOS
 其他问题可看[工具导航](https://github.com/KILING-TASI/research-workbench/blob/main/references/tool-navigation.md)。
 
 
-[15类使用者的任务路径、术语口径与验收边界](USER_SCENARIOS.md)。
 
 
 共同采集与观察表的单位、时间及版本范围见 [FORMAT_SCOPE.md](FORMAT_SCOPE.md)。宏观、微观和规则事件保留各自口径，不混作净值。

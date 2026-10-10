@@ -4,7 +4,7 @@ recursive-include examples *.json *.txt *.html
 recursive-include docs *.md *.json
 global-exclude *.pyc *.pdf
 
-include USER_SCENARIOS.md EXPANSION.md
+include EXPANSION.md
 recursive-include examples/expansion-teaching *.json
 
 include FORMAT_SCOPE.md
