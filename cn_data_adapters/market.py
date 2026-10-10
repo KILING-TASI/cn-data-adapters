@@ -49,11 +49,11 @@ def parse(raw,spec,retrieved_at):
         day=date.fromisoformat(parts[0]);nums=[Decimal(v) for v in parts[1:]]
         if not all(v.is_finite() for v in nums):raise ValueError('行情数值非有限')
         op,close,high,low,lots,amount=nums
-        if min(op,close,high,low)<=0 or min(lots,amount)<0 or lots!=lots.to_integral_value() or high<max(op,close,low) or low>min(op,close,high):raise ValueError('价格、成交量或金额无效')
+        if min(op,close,high,low)<=0 or min(lots,amount)<0 or high<max(op,close,low) or low>min(op,close,high):raise ValueError('价格、成交量或金额无效')
         if not r['start']<=parts[0]<=r['end'] or day>acquired.date():raise ValueError('行情日期越界或晚于取得日期')
-        rows.append({'date':parts[0],'open':str(op),'close':str(close),'high':str(high),'low':str(low),'volume_shares':str(lots*100),'amount_cny':str(amount)})
+        rows.append({'date':parts[0],'open':str(op),'close':str(close),'high':str(high),'low':str(low),'volume_shares':None,'providerVolume':str(lots),'amount_cny':str(amount)})
     if [x['date'] for x in rows]!=sorted(set(x['date'] for x in rows)):raise ValueError('行情日期重复或乱序')
-    return {'schemaVersion':SCHEMA,'request':r,'status':'success','name':data['name'],'sourceUrl':url_for(r),'rawSha256':hashlib.sha256(raw).hexdigest(),'retrievedAt':retrieved_at,'replayedAt':None,'data':rows,'priceBasis':'unadjusted','volumeBasis':'provider lots × 100; limited stock/ETF contract','coverage':'unknown: not certified against exchange calendar','identityVerification':'third-party-code-market-matched; kind supplied by caller','rights':'not assessed; local research archive, no redistribution grant'}
+    return {'schemaVersion':SCHEMA,'request':r,'status':'success','name':data['name'],'sourceUrl':url_for(r),'rawSha256':hashlib.sha256(raw).hexdigest(),'retrievedAt':retrieved_at,'replayedAt':None,'data':rows,'priceBasis':'unadjusted','volumeBasis':'provider unit not certified; volume_shares remains null','coverage':'unknown: not certified against exchange calendar','identityVerification':'third-party-code-market-matched; kind supplied by caller','rights':'not assessed; local research archive, no redistribution grant'}
 
 def replay(snapshot,raw):
     if snapshot.get('schemaVersion')!=SCHEMA or digest(raw)!=snapshot.get('rawSha256'):raise ValueError('冻结响应摘要或格式版本不匹配')
@@ -68,7 +68,8 @@ def export(snapshot,decl):
     if snapshot['request']['kind']=='stock' and decl['category']!='其他':raise ValueError('股票类别限定其他；不冒充ETF分类')
     out=io.StringIO(newline='');writer=csv.DictWriter(out,fieldnames=FIELDS);writer.writeheader()
     for row in snapshot['data']:
-        writer.writerow(dict(row,available_at=snapshot['retrievedAt'],instrument=snapshot['request']['market']+':'+snapshot['request']['code'],name=snapshot['name'],index_id=decl['indexId'],category=decl['category'],price_factor='1'))
+        values={k:v for k,v in row.items() if k in FIELDS}
+        writer.writerow(dict(values,available_at=snapshot['retrievedAt'],instrument=snapshot['request']['market']+':'+snapshot['request']['code'],name=snapshot['name'],index_id=decl['indexId'],category=decl['category'],price_factor='1'))
     return out.getvalue().encode('utf-8')
 
 def publish(out,spec,snapshot,raw,decl=None):

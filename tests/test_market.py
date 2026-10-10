@@ -7,7 +7,7 @@ RAW=json.dumps({'data':{'code':'510300','market':1,'name':'合成教学','klines
 class MarketTests(unittest.TestCase):
     def test_replay_and_available(self):
         s=parse(RAW,SPEC,'2025-01-04T08:00:00+08:00');r=replay(s,RAW)
-        self.assertEqual(s['retrievedAt'],r['retrievedAt']);self.assertIsNotNone(r['replayedAt']);self.assertEqual(s['data'],r['data']);self.assertEqual(s['data'][0]['volume_shares'],'2000')
+        self.assertEqual(s['retrievedAt'],r['retrievedAt']);self.assertIsNotNone(r['replayedAt']);self.assertEqual(s['data'],r['data']);self.assertIsNone(s['data'][0]['volume_shares']);self.assertEqual(s['data'][0]['providerVolume'],'20')
         text=export(s,{'priceFactor':'1','factorEvidence':'原创教学已声明无行动','category':'宽基','indexId':'teaching-only'}).decode()
         self.assertIn('2025-01-04T08:00:00+08:00',text);self.assertIn('SSE:510300',text)
     def test_unknown_factor_blocked(self):
@@ -20,7 +20,7 @@ class MarketTests(unittest.TestCase):
         s['data'][0]['close']='9'
         with self.assertRaises(ValueError):replay(s,RAW)
     def test_identity_date_and_numbers(self):
-        for patch in ({'code':'000001'},{'market':0},{'klines':['2025-01-02,4,4.1,4.2,3.9,20,8000']*2},{'klines':['2025-01-02,4,4.1,3,3.9,20,8000']},{'klines':['2025-01-02,4,4.1,4.2,3.9,1.1,8000']}):
+        for patch in ({'code':'000001'},{'market':0},{'klines':['2025-01-02,4,4.1,4.2,3.9,20,8000']*2},{'klines':['2025-01-02,4,4.1,3,3.9,20,8000']},{'klines':['2025-01-02,4,4.1,4.2,3.9,-1,8000']}):
             obj=json.loads(RAW);obj['data'].update(patch)
             with self.assertRaises(ValueError):parse(json.dumps(obj).encode(),SPEC,'2025-01-04T08:00:00+08:00')
     def test_window_and_no_overwrite(self):

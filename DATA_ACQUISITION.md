@@ -3,7 +3,7 @@
 ## 沪深日线到MarketLens
 
 `python -m cn_data_adapters.market collect --input request.json --online --out-dir reports/new-market`。
-request须明确market（SSE/SZSE）、六位code、kind（stock/etf）、start/end；窗口不超过366天。东方财富未复权日线，成交手数按限定股票/ETF契约转换为股/份。不能推广到债券或其他市场。
+request须明确market（SSE/SZSE）、六位code、kind（stock/etf）、start/end；窗口不超过366天。东方财富未复权日线，渠道成交量原值保留；未核单位不转换成股/份，导出volume_shares为空。不能推广到债券或其他市场。
 
 `parse`接受已有`--raw`和真实`--retrieved-at`；`replay`接受snapshot.json及`--raw response.json`。`export`还需`--declaration`，其中priceFactor必须字符串1、factorEvidence明确全区间可比依据、category按MarketLens枚举、indexId明确或空字符串。所得market.csv可用MarketLens现有`import --kind market`入口导入。available_at取本次原取得时点，不是观察日或虚构历史发布时刻。未知复权因子/有公司行动时首版不导出。
 
