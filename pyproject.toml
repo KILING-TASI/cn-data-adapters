@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "cn-data-adapters"
+version = "0.1.0"
+description = "基金单位净值采集、原生档案标准化和冻结响应重放，保留来源、取得时间与未核事项。"
+requires-python = ">=3.10"
+dependencies = []
+license = "MIT"
+license-files = ["LICENSE"]
+readme = "README.md"
+authors = [{name = "KILING-TASI"}]
+[project.scripts]
+cn-data-adapters = "cn_data_adapters.__main__:main"
+[tool.setuptools.packages.find]
+include = ["cn_data_adapters*"]
+
+[tool.setuptools.data-files]
+"share/cn-data-adapters" = ["VALIDATION.md", "AUDIT_SCOPE.md", "FORMAT_SCOPE.md", "README.md", "SKILL.md", "BEGINNER.md", "USER_SCENARIOS.md", "THIRD_PARTY_NOTICES.md"]
+
+"share/cn-data-adapters/examples" = ["examples/tables-teaching.json"]

@@ -1,0 +1,22 @@
+{
+  "code": "007119",
+  "exitCode": 0,
+  "status": "success",
+  "count": 3,
+  "coverage": {
+    "completeness": "unknown",
+    "count": 3,
+    "observedEnd": "2025-01-06",
+    "observedStart": "2025-01-02",
+    "requestedEnd": "2025-01-06",
+    "requestedStart": "2025-01-02"
+  },
+  "retrievedAt": "2026-10-10T20:29:49.559424+00:00",
+  "rawSha256": "ec3d732f6fcf3839370e04229b98b95c4687b084d6ae8a61a42a72fa3e5fbc23",
+  "sourceUrl": "https://fund.eastmoney.com/pingzhongdata/007119.js",
+  "sourceVerified": false,
+  "rawPublished": false,
+  "scope": "一个真实渠道与限定历史区间；渠道代码匹配不是管理人原件认证，来源和数据再分发权利尚未认证",
+  "frozenReplay": "passed",
+  "replayedAt": "2026-10-10T20:29:49.715531+00:00"
+}

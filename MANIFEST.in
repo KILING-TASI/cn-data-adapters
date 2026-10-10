@@ -1,0 +1,19 @@
+include LICENSE THIRD_PARTY_NOTICES.md README.md SKILL.md BEGINNER.md try_demo.py Start-Demo.cmd Start-Demo.sh
+recursive-include tests *.py
+recursive-include examples *.json *.txt *.html
+recursive-include docs *.md *.json
+global-exclude *.pyc *.pdf
+
+include USER_SCENARIOS.md EXPANSION.md
+recursive-include examples/expansion-teaching *.json
+
+include FORMAT_SCOPE.md
+
+recursive-include examples *.json *.html *.md
+recursive-include .github *.py *.yml
+
+include AUDIT_SCOPE.md
+
+include VALIDATION.md
+
+recursive-include validation *.json

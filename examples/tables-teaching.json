@@ -1,0 +1,26 @@
+{
+  "csvText": "编号,数值\n教学-1,-1.25\n",
+  "mapping": {
+    "id": "编号",
+    "value": "数值"
+  },
+  "constants": {
+    "entity": "原创教学宏观地区",
+    "metric": "同比",
+    "unit": "percent",
+    "currency": null,
+    "basis": "year-over-year-declared",
+    "periodStart": "2026-01-01",
+    "periodEnd": "2026-01-31",
+    "observedAt": null,
+    "publishedAt": null,
+    "availableAt": null,
+    "retrievedAt": "2026-02-01T10:00:00+08:00",
+    "sourceUrl": "https://example.org/teaching",
+    "sourceVersion": "teaching-1",
+    "locator": "原创CSV第1行",
+    "verification": "declared-not-original-verified"
+  },
+  "asOf": "2026-02-01T12:00:00+08:00",
+  "origin": "teaching-tabular-bytes"
+}
