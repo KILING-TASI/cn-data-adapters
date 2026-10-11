@@ -22,3 +22,13 @@
 ## 2026-10-11 原表补采复检
 
 2025版目录共662张表。复用256张旧成功原件并保留各自取得时间，新补采406张；本地原件摘要核对662/662通过。原表包含28正文篇章与附录。目录本轮未重抓。数值核验仍限4表92个选定单元格，没有认证任何整表。只发布覆盖摘要与采集工具，原表图片保留本地，不随代码包上传。见[覆盖摘要](examples/yearbook-2025-coverage-summary.json)。
+
+## 地区统计门户
+
+[大陆31地区入口目录](catalogs/regional-statistics-portals.json)已与国家统计局当前主页外链核对域名身份，记录主页面摘要。新增 `stats-regional` 来源ID支持这些明确HTTPS门户URL的原始响应留档。域名核对、门户响应、结构化表格采集分别记录；不会按域名规律猜测地址、自动降级HTTP或绕过验证。
+
+```text
+cn-data-adapters source-archive capture --input examples/regional-portal-request.json --online --out-dir 新地区门户留档
+```
+
+源目录不是完整数值数据库；统计期、单位、修订版本和数据权利仍逐项核对。官方域名依据：[国家统计局主页](https://www.stats.gov.cn/)。

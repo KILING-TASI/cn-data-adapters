@@ -1,9 +1,16 @@
 import unittest,tempfile,json,subprocess,sys,os
 from pathlib import Path
 from unittest.mock import patch
-from cn_data_adapters.source_archive import main
+from cn_data_adapters.source_archive import main, HOSTS
 
 class SourceTests(unittest.TestCase):
+ def test_regional_domains_match_catalog_and_unknown_hosts_rejected(self):
+  catalog=json.loads((Path(__file__).parents[1]/'catalogs/regional-statistics-portals.json').read_text('utf-8'))
+  self.assertEqual(HOSTS['stats-regional'],{r['host'] for r in catalog['regions']});self.assertEqual(len(HOSTS['stats-regional']),31)
+  with tempfile.TemporaryDirectory() as d:
+   p=Path(d);inp=p/'input.json';inp.write_text(json.dumps({'sourceId':'stats-regional','url':'https://example.org/','purpose':'教学测试'}),'utf-8')
+   with patch('cn_data_adapters.source_archive.download') as fetch:
+    self.assertEqual(main(['capture','--input',str(inp),'--online','--out-dir',str(p/'new')]),2);fetch.assert_not_called()
  def test_capture_replay_and_raw(self):
   with tempfile.TemporaryDirectory() as d:
    p=Path(d);inp=p/'input.json';inp.write_text(json.dumps({'sourceId':'sse','url':'https://www.sse.com.cn/','purpose':'原创测试'}),encoding='utf-8')

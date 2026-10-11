@@ -1,0 +1,395 @@
+{
+  "schemaVersion": "regional-statistics-portals/1",
+  "verifiedAt": "2026-10-11T09:57:03.675145+00:00",
+  "officialIndexSha256": "63bce2145b96bc68391a4f236a1de94dfe1f256418d22162f54fa4961b3fe451",
+  "national": [
+    {
+      "name": "国家统计局",
+      "url": "https://www.stats.gov.cn/"
+    },
+    {
+      "name": "国家数据",
+      "url": "https://data.stats.gov.cn/"
+    }
+  ],
+  "regions": [
+    {
+      "region": "北京市",
+      "url": "https://tjj.beijing.gov.cn/",
+      "host": "tjj.beijing.gov.cn",
+      "officialIndexUrls": [
+        "https://tjj.beijing.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "天津市",
+      "url": "https://stats.tj.gov.cn/",
+      "host": "stats.tj.gov.cn",
+      "officialIndexUrls": [
+        "http://stats.tj.gov.cn"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "河北省",
+      "url": "https://tjj.hebei.gov.cn/",
+      "host": "tjj.hebei.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.hebei.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "山西省",
+      "url": "https://tjj.shanxi.gov.cn/",
+      "host": "tjj.shanxi.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.shanxi.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "内蒙古自治区",
+      "url": "https://tj.nmg.gov.cn/",
+      "host": "tj.nmg.gov.cn",
+      "officialIndexUrls": [
+        "http://tj.nmg.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "辽宁省",
+      "url": "https://tjj.ln.gov.cn/",
+      "host": "tjj.ln.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.ln.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "吉林省",
+      "url": "https://tjj.jl.gov.cn/",
+      "host": "tjj.jl.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.jl.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "黑龙江省",
+      "url": "https://tjj.hlj.gov.cn/",
+      "host": "tjj.hlj.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.hlj.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "上海市",
+      "url": "https://tjj.sh.gov.cn/",
+      "host": "tjj.sh.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.sh.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "江苏省",
+      "url": "https://tj.jiangsu.gov.cn/",
+      "host": "tj.jiangsu.gov.cn",
+      "officialIndexUrls": [
+        "http://tj.jiangsu.gov.cn/index.html"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "浙江省",
+      "url": "https://tjj.zj.gov.cn/",
+      "host": "tjj.zj.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.zj.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "安徽省",
+      "url": "https://tjj.ah.gov.cn/",
+      "host": "tjj.ah.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.ah.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "福建省",
+      "url": "https://tjj.fujian.gov.cn/",
+      "host": "tjj.fujian.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.fujian.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "江西省",
+      "url": "https://tjj.jiangxi.gov.cn/",
+      "host": "tjj.jiangxi.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.jiangxi.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "山东省",
+      "url": "https://tjj.shandong.gov.cn/",
+      "host": "tjj.shandong.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.shandong.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "河南省",
+      "url": "https://tjj.henan.gov.cn/",
+      "host": "tjj.henan.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.henan.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "湖北省",
+      "url": "https://tjj.hubei.gov.cn/",
+      "host": "tjj.hubei.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.hubei.gov.cn"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "湖南省",
+      "url": "https://tjj.hunan.gov.cn/",
+      "host": "tjj.hunan.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.hunan.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "广东省",
+      "url": "https://stats.gd.gov.cn/",
+      "host": "stats.gd.gov.cn",
+      "officialIndexUrls": [
+        "http://stats.gd.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "广西壮族自治区",
+      "url": "https://tjj.gxzf.gov.cn/",
+      "host": "tjj.gxzf.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.gxzf.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "海南省",
+      "url": "https://stats.hainan.gov.cn/",
+      "host": "stats.hainan.gov.cn",
+      "officialIndexUrls": [
+        "http://stats.hainan.gov.cn"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "重庆市",
+      "url": "https://tjj.cq.gov.cn/",
+      "host": "tjj.cq.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.cq.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "四川省",
+      "url": "https://tjj.sc.gov.cn/",
+      "host": "tjj.sc.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.sc.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "贵州省",
+      "url": "https://stjj.guizhou.gov.cn/",
+      "host": "stjj.guizhou.gov.cn",
+      "officialIndexUrls": [
+        "http://stjj.guizhou.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "云南省",
+      "url": "https://stats.yn.gov.cn/",
+      "host": "stats.yn.gov.cn",
+      "officialIndexUrls": [
+        "http://stats.yn.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "西藏自治区",
+      "url": "https://tjj.xizang.gov.cn/",
+      "host": "tjj.xizang.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.xizang.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "陕西省",
+      "url": "https://tjj.shaanxi.gov.cn/",
+      "host": "tjj.shaanxi.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.shaanxi.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "甘肃省",
+      "url": "https://tjj.gansu.gov.cn/",
+      "host": "tjj.gansu.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.gansu.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "青海省",
+      "url": "https://tjj.qinghai.gov.cn/",
+      "host": "tjj.qinghai.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.qinghai.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "宁夏回族自治区",
+      "url": "https://tj.nx.gov.cn/",
+      "host": "tj.nx.gov.cn",
+      "officialIndexUrls": [
+        "http://tj.nx.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    },
+    {
+      "region": "新疆维吾尔自治区",
+      "url": "https://tjj.xinjiang.gov.cn/",
+      "host": "tjj.xinjiang.gov.cn",
+      "officialIndexUrls": [
+        "http://tjj.xinjiang.gov.cn/"
+      ],
+      "officialLinkStatus": "listed-on-nbs-homepage",
+      "portalResponseStatus": "not-attempted",
+      "structuredDataStatus": "not-implemented-by-directory",
+      "sourceUrl": "https://www.stats.gov.cn/"
+    }
+  ],
+  "limitations": [
+    "与国家统计局本次主页外链核对的是域名身份，不是门户访问成功或数值接通",
+    "用户清单中的HTTPS与官网外链协议分别保留；不自动降级HTTP，不绕过验证",
+    "大陆31地区；港澳统计机构已有独立来源ID，台湾数据未在此宣称覆盖",
+    "门户能访问不表示年鉴或所有表可以提取，统计期、单位、修订与权利按每份资料另核"
+  ]
+}

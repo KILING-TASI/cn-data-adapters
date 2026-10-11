@@ -63,3 +63,13 @@ cn-data-adapters tables normalize --input examples/yearbook-C13-12-selected.json
 本轮新增人口25条、31个省级地区2024年GDP一列、11项工业产品两年产量22条。连同既有收入和消费14条，共4张表92个选定单元格；原图只保存在使用者本地，首次发布时间和历史可得时点保持未知。2023工业数值涉及原表说明的修订，地区GDP是现价初步核算数；不把这些记录当成全部31行业或完整年鉴。
 
 能力台账记录7类来源的实现、访问、单位和版本政策，当前未重新请求的来源记missing；这不抹掉以前限定成功，也不冒充本轮已刷新。原件、部分数值核验及全表覆盖分开统计。
+
+## 地区统计门户
+
+[大陆31地区入口目录](catalogs/regional-statistics-portals.json)已与国家统计局当前主页外链核对域名身份，记录主页面摘要。新增 `stats-regional` 来源ID支持这些明确HTTPS门户URL的原始响应留档。域名核对、门户响应、结构化表格采集分别记录；不会按域名规律猜测地址、自动降级HTTP或绕过验证。
+
+```text
+cn-data-adapters source-archive capture --input examples/regional-portal-request.json --online --out-dir 新地区门户留档
+```
+
+源目录不是完整数值数据库；统计期、单位、修订版本和数据权利仍逐项核对。官方域名依据：[国家统计局主页](https://www.stats.gov.cn/)。

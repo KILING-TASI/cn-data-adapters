@@ -9,6 +9,7 @@ from .market import publish
 from ._contract import loads
 
 HOSTS={
+ 'stats-regional':{'tjj.xizang.gov.cn', 'tjj.henan.gov.cn', 'tjj.hunan.gov.cn', 'tjj.cq.gov.cn', 'stats.yn.gov.cn', 'tjj.hebei.gov.cn', 'tjj.qinghai.gov.cn', 'tjj.ah.gov.cn', 'tjj.zj.gov.cn', 'tjj.sh.gov.cn', 'stjj.guizhou.gov.cn', 'tjj.gansu.gov.cn', 'tjj.shandong.gov.cn', 'tjj.xinjiang.gov.cn', 'tj.nmg.gov.cn', 'tjj.beijing.gov.cn', 'tjj.shaanxi.gov.cn', 'tjj.fujian.gov.cn', 'stats.gd.gov.cn', 'tjj.jl.gov.cn', 'tj.nx.gov.cn', 'tjj.jiangxi.gov.cn', 'tjj.shanxi.gov.cn', 'tjj.hubei.gov.cn', 'tjj.sc.gov.cn', 'tjj.ln.gov.cn', 'tjj.gxzf.gov.cn', 'tjj.hlj.gov.cn', 'stats.hainan.gov.cn', 'tj.jiangsu.gov.cn', 'stats.tj.gov.cn'},
  'stats':{'www.stats.gov.cn','data.stats.gov.cn'},
  'energy':{'www.nea.gov.cn'},'agriculture':{'www.moa.gov.cn'},
  'transport':{'www.mot.gov.cn'},'finance':{'www.mof.gov.cn','gks.mof.gov.cn'},
