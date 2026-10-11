@@ -52,7 +52,7 @@
     },
     {
       "localPath": "cn_data_adapters/tables.py",
-      "normalizedTextSha256": "ab87db7c8a0caa2244af7e0d43f45f61924eb6abf2e1f7df4443647ddeb5100c",
+      "normalizedTextSha256": "2ed37c545cba9098058c26b7acd399fd247b55a77cf1247c826a8db7ec916cd2",
       "canonicalRepository": "cn-data-adapters",
       "canonicalPath": "cn_data_adapters/tables.py",
       "syncPolicy": "fixed-with-distribution; review and regenerate manifest before replacing; no runtime source dependency",
