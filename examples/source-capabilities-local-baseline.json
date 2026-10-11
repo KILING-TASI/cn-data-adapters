@@ -102,7 +102,7 @@
       "versionPolicy": "冻结响应与摘要；历史首次可得时点另核",
       "rightsNote": "本地研究留档；源数据再分发授权未认证",
       "access": "public",
-      "implementation": "catalog-only",
+      "implementation": "partial",
       "attemptStatus": "available",
       "lastAttemptAt": "2026-10-11T09:58:52.305282+00:00",
       "evidenceLocator": "catalogs/regional-statistics-portals.json；24/31响应，不代表全部接通",
