@@ -1,2 +1,2 @@
 """Standalone, explicit source acquisition and frozen-response replay."""
-__version__ = '0.4.1.dev0'
+__version__ = '0.4.1'

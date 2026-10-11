@@ -37,3 +37,7 @@ python -m cn_data_adapters.worldbank replay --input reports/wdi-population/snaps
 ```
 
 回放核对每页摘要，保留原取得时间，另记回放时间。新请求不会覆盖旧版本。此入口不进行跨国口径统一，不将国际组织修订数据倒填为过去已知数据。接口说明：https://datahelpdesk.worldbank.org/knowledgebase/articles/898581-api-basic-call-structures 。使用源数据前仍需核对对应数据集的许可和引用要求。
+
+## 2026-10-11 原表补采复检
+
+2025版目录共662张表。复用256张旧成功原件并保留各自取得时间，新补采406张；本地原件摘要核对662/662通过。原表包含28正文篇章与附录。目录本轮未重抓。数值核验仍限4表92个选定单元格，没有认证任何整表。只发布覆盖摘要与采集工具，原表图片保留本地，不随代码包上传。见[覆盖摘要](examples/yearbook-2025-coverage-summary.json)。

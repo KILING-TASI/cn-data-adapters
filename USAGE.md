@@ -50,7 +50,7 @@
 开发维护见[共享组件总表](SHARED_COMPONENTS.md)：固定副本哈希与跨仓遗漏检测分开检查，用户使用本仓不要求其他仓库。
 
 
-## 本地待发布：来源能力与年鉴核验覆盖
+## 本轮更新：来源能力与年鉴核验覆盖
 
 ```console
 cn-data-adapters capabilities review --input examples/source-capabilities-local-baseline.json --out-dir reports/capabilities

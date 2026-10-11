@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "yearbook-coverage-summary/1",
+  "edition": 2025,
+  "directoryTables": 662,
+  "originalFilesBytesMatched": 662,
+  "selectedReviewedCells": 92,
+  "selectedReviewedTables": 4,
+  "fullTablesNumericallyVerified": 0,
+  "priorOriginalsReused": 256,
+  "newOriginalsRetrieved": 406,
+  "manifestSha256": "f3164cbea7de716641eaab2a7fb804ef083f4237a0502045b5cd188fedb0e5ca",
+  "resumedAt": "2026-10-11T09:30:19.430302+00:00",
+  "directoryRefetchedThisRound": false,
+  "chapters": {
+    "1": {
+      "bytes-matched": 8
+    },
+    "2": {
+      "bytes-matched": 15
+    },
+    "3": {
+      "bytes-matched": 23
+    },
+    "4": {
+      "bytes-matched": 13
+    },
+    "5": {
+      "bytes-matched": 13
+    },
+    "6": {
+      "bytes-matched": 36
+    },
+    "7": {
+      "bytes-matched": 13
+    },
+    "8": {
+      "bytes-matched": 35
+    },
+    "9": {
+      "bytes-matched": 19
+    },
+    "10": {
+      "bytes-matched": 19
+    },
+    "11": {
+      "bytes-matched": 20
+    },
+    "12": {
+      "bytes-matched": 17
+    },
+    "13": {
+      "bytes-matched": 15
+    },
+    "14": {
+      "bytes-matched": 24
+    },
+    "15": {
+      "bytes-matched": 15
+    },
+    "16": {
+      "bytes-matched": 39
+    },
+    "17": {
+      "bytes-matched": 10
+    },
+    "18": {
+      "bytes-matched": 22
+    },
+    "19": {
+      "bytes-matched": 16
+    },
+    "20": {
+      "bytes-matched": 33
+    },
+    "21": {
+      "bytes-matched": 23
+    },
+    "22": {
+      "bytes-matched": 26
+    },
+    "23": {
+      "bytes-matched": 35
+    },
+    "24": {
+      "bytes-matched": 32
+    },
+    "25": {
+      "bytes-matched": 19
+    },
+    "26": {
+      "bytes-matched": 49
+    },
+    "27": {
+      "bytes-matched": 30
+    },
+    "28": {
+      "bytes-matched": 28
+    },
+    "appendix": {
+      "bytes-matched": 15
+    }
+  },
+  "sourceUrl": "https://www.stats.gov.cn/sj/ndsj/2025/left.htm",
+  "rights": "原表留在本地研究目录，不随MIT代码包上传；数值与原文再分发授权未认证",
+  "limitations": [
+    "目录与旧原件按摘要复用；各表取得时间分别保留",
+    "原表取得并非全表数值提取、真实历史可得性或独立人工审计"
+  ]
+}
