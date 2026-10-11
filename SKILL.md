@@ -16,3 +16,5 @@ MarketLens行情导出只接受明确核对的全区间因子为1及其依据；
 国际年度序列使用 `python -m cn_data_adapters.worldbank`，先明确地区、指标和区间；保留来源空值、空单位及分页摘要，不自动统一国内外统计方法。
 
 本地标准资料校验已合并，入口 `cn-data-adapters validate/validate-table`，见[迁移说明](CONTRACT_MIGRATION.md)。城市/分省、目录与成本入口见[行业地区资料](REGIONAL_DATA.md)。省级真实请求403仍属失败，目录登记不能转述已采集；图像转录不冒充完整OCR。
+
+本地待发布的 `capabilities review` 分开展示来源实现、访问、取得状态、单位与版本政策；本轮未请求不表示源站没有资料。`coverage` 分开统计目录、原件摘要匹配、选定单元格核验和全表覆盖；部分单元格不升级为整张表成功。四张年鉴表的限定事实示例见 [USAGE.md](USAGE.md)，图像原件及首次历史可得时间仍须各自核对。

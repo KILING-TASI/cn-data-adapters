@@ -23,4 +23,11 @@ def normalize(spec):
     checks=validate(result)
     return {'conclusion':'宏观和微观表按显式映射统一身份、指标、单位、期间与来源；不混同观察、发布、可得和取得时点。','snapshot':result,'validation':checks,'humanRows':[['标准行数',checks['count']],['历史可得时点未知行数',len(checks['historicalAvailabilityUnknownIds'])],['截止后排除行数',len(checks['excludedAfterCutoffIds'])]],'limitations':['本入口只转换提供的CSV，不联网抓全部宏观/行情/财报源','标准单位为明确原单位，未隐式换算、复权、补零或调整季频','原文及元数据依赖声明，摘要不证明源站真实性','统一观察表与净值采集、规则证据信封分别有版本，不覆盖原业务契约']}
 
-if __name__=='__main__':raise SystemExit(cli({'normalize':normalize},'宏观与微观观察表标准化'))
+def main(argv=None):
+    import sys
+    original=sys.argv
+    if argv is not None:sys.argv=[original[0],*argv]
+    try:return cli({'normalize':normalize},'宏观与微观观察表标准化')
+    finally:sys.argv=original
+
+if __name__=='__main__':raise SystemExit(main())

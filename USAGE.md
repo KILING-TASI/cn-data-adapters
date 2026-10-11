@@ -48,3 +48,18 @@
 
 
 开发维护见[共享组件总表](SHARED_COMPONENTS.md)：固定副本哈希与跨仓遗漏检测分开检查，用户使用本仓不要求其他仓库。
+
+
+## 本地待发布：来源能力与年鉴核验覆盖
+
+```console
+cn-data-adapters capabilities review --input examples/source-capabilities-local-baseline.json --out-dir reports/capabilities
+cn-data-adapters coverage --snapshot 已留档年鉴目录/snapshot.json --reviews 选定单元格核验记录.json --out-dir reports/coverage
+cn-data-adapters tables normalize --input examples/yearbook-population-selected.json --out-dir reports/population
+cn-data-adapters tables normalize --input examples/yearbook-C03-09-selected.json --out-dir reports/regions
+cn-data-adapters tables normalize --input examples/yearbook-C13-12-selected.json --out-dir reports/industry
+```
+
+本轮新增人口25条、31个省级地区2024年GDP一列、11项工业产品两年产量22条。连同既有收入和消费14条，共4张表92个选定单元格；原图只保存在使用者本地，首次发布时间和历史可得时点保持未知。2023工业数值涉及原表说明的修订，地区GDP是现价初步核算数；不把这些记录当成全部31行业或完整年鉴。
+
+能力台账记录7类来源的实现、访问、单位和版本政策，当前未重新请求的来源记missing；这不抹掉以前限定成功，也不冒充本轮已刷新。原件、部分数值核验及全表覆盖分开统计。
