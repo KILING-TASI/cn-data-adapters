@@ -18,8 +18,8 @@ cn-research-contracts = "cn_data_adapters.contracts.__main__:main"
 include = ["cn_data_adapters*"]
 
 [tool.setuptools.data-files]
-"share/cn-data-adapters" = ["USAGE.md", "SHARED_CODE.json", "RIGHTS_INDEX.json", "CONTRIBUTING.md", "SECURITY.md", "LIFECYCLE.md", "REGIONAL_DATA.md", "CONTRACT_MIGRATION.md", "YEARBOOK.md", "DATA_ACQUISITION.md", "README.en.md", "CHANGELOG.md", "VALIDATION.md", "AUDIT_SCOPE.md", "FORMAT_SCOPE.md", "README.md", "SKILL.md", "BEGINNER.md", "THIRD_PARTY_NOTICES.md"]
+"share/cn-data-adapters" = ["PANORAMA.md", "USAGE.md", "SHARED_CODE.json", "RIGHTS_INDEX.json", "CONTRIBUTING.md", "SECURITY.md", "LIFECYCLE.md", "REGIONAL_DATA.md", "CONTRACT_MIGRATION.md", "YEARBOOK.md", "DATA_ACQUISITION.md", "README.en.md", "CHANGELOG.md", "VALIDATION.md", "AUDIT_SCOPE.md", "FORMAT_SCOPE.md", "README.md", "SKILL.md", "BEGINNER.md", "THIRD_PARTY_NOTICES.md"]
 
 "share/cn-data-adapters/examples" = ["examples/regional-portal-request.json", "examples/tables-teaching.json", "examples/resident-income-request.json", "examples/resident-income-mapping.json", "examples/worldbank-population-request.json", "examples/housing-request.json", "examples/nbs-provincial-request.json", "examples/yearbook-2025-coverage-summary.json", "examples/source-capabilities-local-baseline.json", "examples/yearbook-population-selected.json", "examples/yearbook-C03-09-selected.json", "examples/yearbook-C13-12-selected.json"]
 
-"share/cn-data-adapters/catalogs" = ["catalogs/industry-indicators.json", "catalogs/industry-coverage.json", "catalogs/regional-statistics-portals.json"]
+"share/cn-data-adapters/catalogs" = ["catalogs/research-data-panorama.json", "catalogs/industry-indicators.json", "catalogs/industry-coverage.json", "catalogs/regional-statistics-portals.json"]

@@ -27,7 +27,8 @@
       "responseSha256": "459eebaa8216c0def16d49f27ba4fd1e8e83589036f5357b7ac7cef7cbdb54c5",
       "lastRetrievedAt": "2026-10-11T09:58:28.110656+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:27.760394+00:00"
     },
     {
       "region": "天津市",
@@ -43,7 +44,8 @@
       "responseSha256": "29517f4722612a0df60f3e65e3721d0b1f9b92ce7b3eb1239494c2207f818803",
       "lastRetrievedAt": "2026-10-11T09:58:32.983009+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:27.760394+00:00"
     },
     {
       "region": "河北省",
@@ -59,7 +61,8 @@
       "responseSha256": "2db78e47a43018c3e612d30049c2fcdd5dd4effa32a71e01d47609eb6ee6c480",
       "lastRetrievedAt": "2026-10-11T09:58:28.676337+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:28.269129+00:00"
     },
     {
       "region": "山西省",
@@ -75,7 +78,8 @@
       "responseSha256": "fd0365b8ce2df72a7309aaf9c57269363a7635ad661cc633e907a5771424082a",
       "lastRetrievedAt": "2026-10-11T09:58:50.636206+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:28.839467+00:00"
     },
     {
       "region": "内蒙古自治区",
@@ -91,7 +95,8 @@
       "responseSha256": "c696361f4d291e7d277e3d2d5e2246b59460499d3124e59b96cab35015eaaac0",
       "lastRetrievedAt": "2026-10-11T09:58:33.751507+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:33.161780+00:00"
     },
     {
       "region": "辽宁省",
@@ -107,7 +112,8 @@
       "responseSha256": "8353896b608d3e179846a0b8e928ee16b9718a52d53dfa62d8ba4a2ef192b960",
       "lastRetrievedAt": "2026-10-11T09:58:34.426357+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:33.921070+00:00"
     },
     {
       "region": "吉林省",
@@ -123,7 +129,8 @@
       "responseSha256": "5b28381ebfa0d2a42b96b33b3b2455c63e2f8aefa46a13b9d6418ff871f43210",
       "lastRetrievedAt": "2026-10-11T09:58:35.493578+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:34.588830+00:00"
     },
     {
       "region": "黑龙江省",
@@ -139,7 +146,8 @@
       "responseSha256": "dd0e641ba510eaf4e000ff5654ffe1c6697922a839d1db6b132c9ad92334f347",
       "lastRetrievedAt": "2026-10-11T09:58:36.495296+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:35.680556+00:00"
     },
     {
       "region": "上海市",
@@ -155,7 +163,8 @@
       "responseSha256": "9f0c7ee302c2c55925a46ac588b72f13c8a4a630122914a76e5f4b3301bf20a1",
       "lastRetrievedAt": "2026-10-11T09:58:37.084828+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:36.668358+00:00"
     },
     {
       "region": "江苏省",
@@ -171,7 +180,8 @@
       "responseSha256": null,
       "lastRetrievedAt": null,
       "responseError": "HTTPError: HTTP Error 403: Forbidden",
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:37.245204+00:00"
     },
     {
       "region": "浙江省",
@@ -187,7 +197,8 @@
       "responseSha256": "a23d2e58dde36a6feb8432af4c5693eea40812fa5d10384a71cf49f67c4c7746",
       "lastRetrievedAt": "2026-10-11T09:58:38.052040+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:37.581139+00:00"
     },
     {
       "region": "安徽省",
@@ -203,7 +214,8 @@
       "responseSha256": null,
       "lastRetrievedAt": null,
       "responseError": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:38.217938+00:00"
     },
     {
       "region": "福建省",
@@ -219,7 +231,8 @@
       "responseSha256": "583d88f32214f0755cf8b2facc740bf0f2efec9fc999cafbe430f77185c3c0c0",
       "lastRetrievedAt": "2026-10-11T09:58:38.988867+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:38.561779+00:00"
     },
     {
       "region": "江西省",
@@ -235,7 +248,8 @@
       "responseSha256": "98958a72975b9173b9602936b24027188e9d867da0d6f74baedad554d57647cd",
       "lastRetrievedAt": "2026-10-11T09:58:40.511412+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:39.137871+00:00"
     },
     {
       "region": "山东省",
@@ -251,7 +265,8 @@
       "responseSha256": null,
       "lastRetrievedAt": null,
       "responseError": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tjj.shandong.gov.cn'. (_ssl.c:1010)>",
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:40.668157+00:00"
     },
     {
       "region": "河南省",
@@ -267,7 +282,8 @@
       "responseSha256": "f011a17a1bf458cbe7446cac00cd7f708fe5c100f22f9af9134077d7b91d0640",
       "lastRetrievedAt": "2026-10-11T09:58:41.284053+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:41.045004+00:00"
     },
     {
       "region": "湖北省",
@@ -283,7 +299,8 @@
       "responseSha256": "98c9f7e24d073178befbf61f4bb90eb4f19fa406a7061d0ba7ecd8786a92bc41",
       "lastRetrievedAt": "2026-10-11T09:58:41.736603+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:41.426335+00:00"
     },
     {
       "region": "湖南省",
@@ -299,7 +316,8 @@
       "responseSha256": "7b0a6202f401718091d356f8d67c7a7b59bbeb25078b73315d46d10f8a67f890",
       "lastRetrievedAt": "2026-10-11T09:58:42.214988+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:41.901335+00:00"
     },
     {
       "region": "广东省",
@@ -315,7 +333,8 @@
       "responseSha256": "ca6d629fcb5a5b5d46959daee9d4e57850a8169bf7c45c16a08f9bb3bf8fb66d",
       "lastRetrievedAt": "2026-10-11T09:58:42.808314+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:42.361300+00:00"
     },
     {
       "region": "广西壮族自治区",
@@ -331,7 +350,8 @@
       "responseSha256": null,
       "lastRetrievedAt": null,
       "responseError": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tjj.gxzf.gov.cn'. (_ssl.c:1010)>",
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:42.959674+00:00"
     },
     {
       "region": "海南省",
@@ -347,7 +367,8 @@
       "responseSha256": null,
       "lastRetrievedAt": null,
       "responseError": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:43.302246+00:00"
     },
     {
       "region": "重庆市",
@@ -363,7 +384,8 @@
       "responseSha256": "5aaaa0a004c62b30f89bfe4897ce1d2dceaf16c17d3d3e62d3d740d765a454b5",
       "lastRetrievedAt": "2026-10-11T09:58:44.099721+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:43.659635+00:00"
     },
     {
       "region": "四川省",
@@ -379,7 +401,8 @@
       "responseSha256": "fb87e8a1eae60b5b35ba76c46472243b1a6896a322bf313d940ec66a82e2c054",
       "lastRetrievedAt": "2026-10-11T09:58:44.632298+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:44.269804+00:00"
     },
     {
       "region": "贵州省",
@@ -395,7 +418,8 @@
       "responseSha256": "e8dc2f54d464612da6c07318408bbfeb97aa9689bf848191d069ec1aa2f84241",
       "lastRetrievedAt": "2026-10-11T09:58:45.271510+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:44.808384+00:00"
     },
     {
       "region": "云南省",
@@ -411,7 +435,8 @@
       "responseSha256": "e5333c7679710e0b01cd3d9bd5bc24f081fe92f63bee6b25aabab07dcfed4fa5",
       "lastRetrievedAt": "2026-10-11T09:58:45.786405+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:45.438771+00:00"
     },
     {
       "region": "西藏自治区",
@@ -427,7 +452,8 @@
       "responseSha256": "9bbb1302beff77f144ece794d374322e7059158d7efcc10b58f111c40e92e5bb",
       "lastRetrievedAt": "2026-10-11T09:58:46.526236+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:45.940385+00:00"
     },
     {
       "region": "陕西省",
@@ -443,7 +469,8 @@
       "responseSha256": "c4884c0fcb354dad2e86a47f481945f45044a20ab6dfb20f91af8bedd3170f68",
       "lastRetrievedAt": "2026-10-11T09:59:08.087664+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:46.682918+00:00"
     },
     {
       "region": "甘肃省",
@@ -459,7 +486,8 @@
       "responseSha256": null,
       "lastRetrievedAt": null,
       "responseError": "HTTPError: HTTP Error 412: Precondition Failed",
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:50.820038+00:00"
     },
     {
       "region": "青海省",
@@ -475,7 +503,8 @@
       "responseSha256": null,
       "lastRetrievedAt": null,
       "responseError": "URLError: <urlopen error [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1010)>",
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:51.246952+00:00"
     },
     {
       "region": "宁夏回族自治区",
@@ -491,7 +520,8 @@
       "responseSha256": "aefb12fb991309dcc5ff697767abc3a627af4b325393235f6267eb297fe2a671",
       "lastRetrievedAt": "2026-10-11T09:58:52.156647+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:51.647413+00:00"
     },
     {
       "region": "新疆维吾尔自治区",
@@ -507,7 +537,8 @@
       "responseSha256": "e6fb980065edda68fe7bd91cf86f0d0bcc314655acdaa626c1454c600e327f98",
       "lastRetrievedAt": "2026-10-11T09:58:53.028826+00:00",
       "responseError": null,
-      "originalContentVerified": false
+      "originalContentVerified": false,
+      "lastAttemptAt": "2026-10-11T09:58:52.305282+00:00"
     }
   ],
   "limitations": [

@@ -104,7 +104,7 @@
       "access": "public",
       "implementation": "catalog-only",
       "attemptStatus": "available",
-      "lastAttemptAt": "2026-10-11T09:57:03.675145+00:00",
+      "lastAttemptAt": "2026-10-11T09:58:52.305282+00:00",
       "evidenceLocator": "catalogs/regional-statistics-portals.json；24/31响应，不代表全部接通",
       "latestObservationDate": null,
       "maxAgeDays": null,

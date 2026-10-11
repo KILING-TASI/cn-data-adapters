@@ -1,0 +1,2153 @@
+{
+  "schemaVersion": "research-data-panorama/1",
+  "sourceDocumentSha256": "4548e2663158afb2a20c447a5a18a1a0502330e0a755207c1787cd50f4b957ae",
+  "sections": [
+    {
+      "section": "第一部分 官方统计入口",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库"
+    },
+    {
+      "section": "第二部分 申万31个行业景气指标",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "31行业275候选目录；部分年度选定行；非全量景气序列"
+    },
+    {
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现"
+    },
+    {
+      "section": "第四部分 一致预期与卖方数据（性价比最高）",
+      "ownerRepositories": [
+        "research-workbench",
+        "cn-data-adapters"
+      ],
+      "coverage": "已有预测观察档案；无自动一致预期或完整修正广度数据源"
+    },
+    {
+      "section": "第五部分 交易与资金层",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别"
+    },
+    {
+      "section": "第六部分 事件与公司治理",
+      "ownerRepositories": [
+        "cn-market-rules",
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "逐条资料状态、规则与证据解释部分支持；原文认证另核"
+    },
+    {
+      "section": "第七部分 海外与全球领先指标",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "部分明确国际年度序列；非所有海外高频领先数据"
+    },
+    {
+      "section": "第八部分 另类数据（alpha 主战场，成本也最高）",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "候选来源登记；无私人账户、支付明细或移动轨迹采集"
+    },
+    {
+      "section": "第九部分 文本与非结构化（NLP 富矿）",
+      "ownerRepositories": [
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "选定文本与主张对照；不提供自动真伪或因果认证"
+    },
+    {
+      "section": "第十部分 产业链传导与结构数据",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "本地表格与原表留档可用；完整投入产出平衡与传导模型未实现"
+    }
+  ],
+  "nonIndustryCandidates": [
+    {
+      "id": "panorama-001",
+      "section": "第一部分 官方统计入口",
+      "metric": "国家统计局",
+      "sourceNames": "https://www.stats.gov.cn/",
+      "frequencyClaimed": "官方总门户，GDP、CPI、人口普查等全国性指标第一时间发布；首页底部有\"地方统计网站\"链接区，可跳转各省统计局",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-002",
+      "section": "第一部分 官方统计入口",
+      "metric": "国家数据（数据发布库）",
+      "sourceNames": "https://data.stats.gov.cn/",
+      "frequencyClaimed": "在线数据超市，按主题/地区/年份自由查询；专设地区数据栏目，31 个地区月度、季度、年度主要指标一站式可比，支持制表、绘图、文件导出",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-003",
+      "section": "第一部分 官方统计入口",
+      "metric": "GDP、工业增加值、社零、固投、进出口",
+      "sourceNames": "国家统计局",
+      "frequencyClaimed": "月/季",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-004",
+      "section": "第一部分 官方统计入口",
+      "metric": "CPI、PPI（含分行业 PPI）",
+      "sourceNames": "国家统计局",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-005",
+      "section": "第一部分 官方统计入口",
+      "metric": "社融、M1/M2、新增贷款",
+      "sourceNames": "中国人民银行",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-006",
+      "section": "第一部分 官方统计入口",
+      "metric": "LPR、MLF、逆回购、存款准备金率",
+      "sourceNames": "中国人民银行",
+      "frequencyClaimed": "月/不定期",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-007",
+      "section": "第一部分 官方统计入口",
+      "metric": "官方制造业/非制造业 PMI、财新 PMI",
+      "sourceNames": "国家统计局、财新",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-008",
+      "section": "第一部分 官方统计入口",
+      "metric": "财政收支、专项债、国债发行",
+      "sourceNames": "财政部",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-009",
+      "section": "第一部分 官方统计入口",
+      "metric": "一般公共预算、政府性基金支出",
+      "sourceNames": "财政部",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-010",
+      "section": "第一部分 官方统计入口",
+      "metric": "出口集装箱运价、分商品出口额",
+      "sourceNames": "海关总署、上海航运交易所",
+      "frequencyClaimed": "月/周",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-011",
+      "section": "第一部分 官方统计入口",
+      "metric": "城镇调查失业率、新增就业",
+      "sourceNames": "国家统计局、人社部",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-012",
+      "section": "第一部分 官方统计入口",
+      "metric": "央行货币政策执行报告、金融稳定报告",
+      "sourceNames": "中国人民银行",
+      "frequencyClaimed": "季/半年",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-013",
+      "section": "第一部分 官方统计入口",
+      "metric": "全国碳市场、绿电交易",
+      "sourceNames": "上海环交所",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-014",
+      "section": "第一部分 官方统计入口",
+      "metric": "外汇储备、汇率（人民币中间价、CFETS 指数）",
+      "sourceNames": "外汇交易中心、外汇局",
+      "frequencyClaimed": "日/月",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "门户/原表留档与部分明确表格入口；不是全地区数值库",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-015",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "分产品/分业务/分地区收入拆分",
+      "sourceNames": "定期报告附注",
+      "frequencyClaimed": "半年/年",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-016",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "量价拆分（收入=销量×价格）",
+      "sourceNames": "年报经营数据+行业协会",
+      "frequencyClaimed": "半年/年",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-017",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "毛利率分业务/分季度",
+      "sourceNames": "定期报告",
+      "frequencyClaimed": "季",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-018",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "在建工程、资本开支（capex）",
+      "sourceNames": "定期报告",
+      "frequencyClaimed": "季",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-019",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "研发费用资本化率",
+      "sourceNames": "定期报告附注",
+      "frequencyClaimed": "年",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-020",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "合同负债/在手订单",
+      "sourceNames": "定期报告",
+      "frequencyClaimed": "季",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-021",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "应收账款账龄结构、周转天数",
+      "sourceNames": "定期报告附注",
+      "frequencyClaimed": "半年/年",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-022",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "存货结构（原材料/在产品/产成品）",
+      "sourceNames": "定期报告附注",
+      "frequencyClaimed": "半年/年",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-023",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "商誉规模及减值",
+      "sourceNames": "定期报告",
+      "frequencyClaimed": "年",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-024",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "员工人数、人均产出、人均薪酬",
+      "sourceNames": "定期报告",
+      "frequencyClaimed": "年",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-025",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "客户集中度、供应商集中度",
+      "sourceNames": "定期报告",
+      "frequencyClaimed": "年",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-026",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "自由现金流、经营现金流/净利润",
+      "sourceNames": "定期报告",
+      "frequencyClaimed": "季",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-027",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "股权激励行权/解锁条件",
+      "sourceNames": "股权激励公告",
+      "frequencyClaimed": "不定期",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-028",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "可转债转股价、下修与赎回条款",
+      "sourceNames": "募集说明书/公告",
+      "frequencyClaimed": "不定期",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-029",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "递延所得税资产/负债",
+      "sourceNames": "定期报告附注",
+      "frequencyClaimed": "年",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-030",
+      "section": "第三部分 公司基本面层（财报之下的那一层）",
+      "metric": "表外负债：对外担保、承诺事项",
+      "sourceNames": "定期报告附注",
+      "frequencyClaimed": "年",
+      "ownerRepositories": [
+        "cn-financial-reconcile",
+        "research-workbench"
+      ],
+      "coverage": "财报字段、现金覆盖与显式情景部分支持；附注全量拆分未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-031",
+      "section": "第四部分 一致预期与卖方数据（性价比最高）",
+      "metric": "未来1-3年净利润/EPS/营收一致预期",
+      "sourceNames": "Wind、Choice、朝阳永续",
+      "frequencyClaimed": "日更新",
+      "ownerRepositories": [
+        "research-workbench",
+        "cn-data-adapters"
+      ],
+      "coverage": "已有预测观察档案；无自动一致预期或完整修正广度数据源",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-032",
+      "section": "第四部分 一致预期与卖方数据（性价比最高）",
+      "metric": "盈利预测修正广度（上调家数−下调家数）",
+      "sourceNames": "Wind、朝阳永续",
+      "frequencyClaimed": "周/月",
+      "ownerRepositories": [
+        "research-workbench",
+        "cn-data-adapters"
+      ],
+      "coverage": "已有预测观察档案；无自动一致预期或完整修正广度数据源",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-033",
+      "section": "第四部分 一致预期与卖方数据（性价比最高）",
+      "metric": "盈利预测调整幅度（3个月/6个月变动率）",
+      "sourceNames": "Wind",
+      "frequencyClaimed": "周",
+      "ownerRepositories": [
+        "research-workbench",
+        "cn-data-adapters"
+      ],
+      "coverage": "已有预测观察档案；无自动一致预期或完整修正广度数据源",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-034",
+      "section": "第四部分 一致预期与卖方数据（性价比最高）",
+      "metric": "评级分布（买入/增持/中性/卖出占比）",
+      "sourceNames": "Wind",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "research-workbench",
+        "cn-data-adapters"
+      ],
+      "coverage": "已有预测观察档案；无自动一致预期或完整修正广度数据源",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-035",
+      "section": "第四部分 一致预期与卖方数据（性价比最高）",
+      "metric": "目标价与一致目标价变动",
+      "sourceNames": "Wind",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "research-workbench",
+        "cn-data-adapters"
+      ],
+      "coverage": "已有预测观察档案；无自动一致预期或完整修正广度数据源",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-036",
+      "section": "第四部分 一致预期与卖方数据（性价比最高）",
+      "metric": "分析师覆盖数量变化",
+      "sourceNames": "Wind",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "research-workbench",
+        "cn-data-adapters"
+      ],
+      "coverage": "已有预测观察档案；无自动一致预期或完整修正广度数据源",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-037",
+      "section": "第四部分 一致预期与卖方数据（性价比最高）",
+      "metric": "业绩超预期/不及预期（EPS surprise）",
+      "sourceNames": "实际 vs 预期",
+      "frequencyClaimed": "季",
+      "ownerRepositories": [
+        "research-workbench",
+        "cn-data-adapters"
+      ],
+      "coverage": "已有预测观察档案；无自动一致预期或完整修正广度数据源",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-038",
+      "section": "第四部分 一致预期与卖方数据（性价比最高）",
+      "metric": "业绩预告与快报（净利润区间）",
+      "sourceNames": "交易所公告",
+      "frequencyClaimed": "季/不定期",
+      "ownerRepositories": [
+        "research-workbench",
+        "cn-data-adapters"
+      ],
+      "coverage": "已有预测观察档案；无自动一致预期或完整修正广度数据源",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-039",
+      "section": "第四部分 一致预期与卖方数据（性价比最高）",
+      "metric": "机构调研次数与参与机构名单",
+      "sourceNames": "深交所互动易、公司公告",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "research-workbench",
+        "cn-data-adapters"
+      ],
+      "coverage": "已有预测观察档案；无自动一致预期或完整修正广度数据源",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-040",
+      "section": "第四部分 一致预期与卖方数据（性价比最高）",
+      "metric": "个股/行业估值分位（PE/PB/PS 历史分位）",
+      "sourceNames": "Wind、交易所",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "research-workbench",
+        "cn-data-adapters"
+      ],
+      "coverage": "已有预测观察档案；无自动一致预期或完整修正广度数据源",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-041",
+      "section": "第五部分 交易与资金层",
+      "metric": "拥挤度/成交占比历史分位",
+      "sourceNames": "Wind、交易所",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-042",
+      "section": "第五部分 交易与资金层",
+      "metric": "涨跌幅、换手率、波动率",
+      "sourceNames": "交易所",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-043",
+      "section": "第五部分 交易与资金层",
+      "metric": "PE/PB/股息率及历史分位",
+      "sourceNames": "Wind、交易所",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-044",
+      "section": "第五部分 交易与资金层",
+      "metric": "龙虎榜（机构专用席位、游资）",
+      "sourceNames": "交易所",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-045",
+      "section": "第五部分 交易与资金层",
+      "metric": "大宗交易（折溢价率）",
+      "sourceNames": "交易所",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-046",
+      "section": "第五部分 交易与资金层",
+      "metric": "限售解禁市值与节奏",
+      "sourceNames": "Wind",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-047",
+      "section": "第五部分 交易与资金层",
+      "metric": "股权质押比例与平仓线",
+      "sourceNames": "公司公告、中登",
+      "frequencyClaimed": "不定期",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-048",
+      "section": "第五部分 交易与资金层",
+      "metric": "股东户数、户均持股、筹码集中度",
+      "sourceNames": "交易所互动易、定期报告",
+      "frequencyClaimed": "季/月",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-049",
+      "section": "第五部分 交易与资金层",
+      "metric": "融资融券余额、担保比例、融券量",
+      "sourceNames": "沪深交易所",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-050",
+      "section": "第五部分 交易与资金层",
+      "metric": "基金持仓：主动偏股行业配置比例",
+      "sourceNames": "基金季报",
+      "frequencyClaimed": "季",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-051",
+      "section": "第五部分 交易与资金层",
+      "metric": "ETF 份额变化与净流入",
+      "sourceNames": "交易所、Wind",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-052",
+      "section": "第五部分 交易与资金层",
+      "metric": "社保/QFII/险资/私募持仓",
+      "sourceNames": "定期报告十大股东",
+      "frequencyClaimed": "季",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-053",
+      "section": "第五部分 交易与资金层",
+      "metric": "北向资金持股",
+      "sourceNames": "港交所/交易所",
+      "frequencyClaimed": "季（2024-08起改口径）",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-054",
+      "section": "第五部分 交易与资金层",
+      "metric": "股指期货基差、期权 PCR、隐含波动率",
+      "sourceNames": "中金所、交易所",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-055",
+      "section": "第五部分 交易与资金层",
+      "metric": "行业指数相对强弱、动量",
+      "sourceNames": "自算",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "marketlens",
+        "cn-fund-lookthrough",
+        "cn-etf-rotation-engine"
+      ],
+      "coverage": "未复权沪深日线与部分披露分析；不包含全量资金身份识别",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-056",
+      "section": "第六部分 事件与公司治理",
+      "metric": "并购重组、分拆上市、资产注入",
+      "sourceNames": "交易所公告",
+      "frequencyClaimed": "不定期",
+      "ownerRepositories": [
+        "cn-market-rules",
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "逐条资料状态、规则与证据解释部分支持；原文认证另核",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-057",
+      "section": "第六部分 事件与公司治理",
+      "metric": "回购（金额、进度、注销 vs 激励）",
+      "sourceNames": "公司公告",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-market-rules",
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "逐条资料状态、规则与证据解释部分支持；原文认证另核",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-058",
+      "section": "第六部分 事件与公司治理",
+      "metric": "大股东/董监高增减持",
+      "sourceNames": "交易所",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-market-rules",
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "逐条资料状态、规则与证据解释部分支持；原文认证另核",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-059",
+      "section": "第六部分 事件与公司治理",
+      "metric": "定增、配股、可转债发行",
+      "sourceNames": "证监会、交易所",
+      "frequencyClaimed": "不定期",
+      "ownerRepositories": [
+        "cn-market-rules",
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "逐条资料状态、规则与证据解释部分支持；原文认证另核",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-060",
+      "section": "第六部分 事件与公司治理",
+      "metric": "分红方案、股息率、分红率",
+      "sourceNames": "公司公告",
+      "frequencyClaimed": "年",
+      "ownerRepositories": [
+        "cn-market-rules",
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "逐条资料状态、规则与证据解释部分支持；原文认证另核",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-061",
+      "section": "第六部分 事件与公司治理",
+      "metric": "监管问询函、关注函、处罚",
+      "sourceNames": "交易所、证监会",
+      "frequencyClaimed": "不定期",
+      "ownerRepositories": [
+        "cn-market-rules",
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "逐条资料状态、规则与证据解释部分支持；原文认证另核",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-062",
+      "section": "第六部分 事件与公司治理",
+      "metric": "诉讼、仲裁、担保",
+      "sourceNames": "公司公告",
+      "frequencyClaimed": "不定期",
+      "ownerRepositories": [
+        "cn-market-rules",
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "逐条资料状态、规则与证据解释部分支持；原文认证另核",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-063",
+      "section": "第六部分 事件与公司治理",
+      "metric": "审计意见类型（保留/强调事项）",
+      "sourceNames": "年报",
+      "frequencyClaimed": "年",
+      "ownerRepositories": [
+        "cn-market-rules",
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "逐条资料状态、规则与证据解释部分支持；原文认证另核",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-064",
+      "section": "第六部分 事件与公司治理",
+      "metric": "会计师事务所变更",
+      "sourceNames": "公司公告",
+      "frequencyClaimed": "不定期",
+      "ownerRepositories": [
+        "cn-market-rules",
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "逐条资料状态、规则与证据解释部分支持；原文认证另核",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-065",
+      "section": "第六部分 事件与公司治理",
+      "metric": "ST/*ST/退市风险警示",
+      "sourceNames": "交易所",
+      "frequencyClaimed": "不定期",
+      "ownerRepositories": [
+        "cn-market-rules",
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "逐条资料状态、规则与证据解释部分支持；原文认证另核",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-066",
+      "section": "第六部分 事件与公司治理",
+      "metric": "信用评级及评级展望、信用利差",
+      "sourceNames": "评级机构、中债估值",
+      "frequencyClaimed": "不定期/日",
+      "ownerRepositories": [
+        "cn-market-rules",
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "逐条资料状态、规则与证据解释部分支持；原文认证另核",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-067",
+      "section": "第六部分 事件与公司治理",
+      "metric": "行业政策文件、五年规划、限产通知",
+      "sourceNames": "发改委、工信部、能源局等",
+      "frequencyClaimed": "不定期",
+      "ownerRepositories": [
+        "cn-market-rules",
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "逐条资料状态、规则与证据解释部分支持；原文认证另核",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-068",
+      "section": "第七部分 海外与全球领先指标",
+      "metric": "美联储利率决议、点阵图、FOMC纪要",
+      "sourceNames": "美联储",
+      "frequencyClaimed": "6周一次",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "部分明确国际年度序列；非所有海外高频领先数据",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-069",
+      "section": "第七部分 海外与全球领先指标",
+      "metric": "美债10Y/2Y收益率、美元指数、实际利率",
+      "sourceNames": "美联储、Wind",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "部分明确国际年度序列；非所有海外高频领先数据",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-070",
+      "section": "第七部分 海外与全球领先指标",
+      "metric": "美国非农、CPI、零售销售、GDPNow",
+      "sourceNames": "BLS、BEA、亚特兰大联储",
+      "frequencyClaimed": "月/周",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "部分明确国际年度序列；非所有海外高频领先数据",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-071",
+      "section": "第七部分 海外与全球领先指标",
+      "metric": "台积电月度营收",
+      "sourceNames": "台积电官网",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "部分明确国际年度序列；非所有海外高频领先数据",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-072",
+      "section": "第七部分 海外与全球领先指标",
+      "metric": "海外龙头财报：苹果、英伟达、ASML、特斯拉、卡特彼勒",
+      "sourceNames": "公司 IR",
+      "frequencyClaimed": "季",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "部分明确国际年度序列；非所有海外高频领先数据",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-073",
+      "section": "第七部分 海外与全球领先指标",
+      "metric": "北美云厂商资本开支（微软/谷歌/亚马逊/Meta）",
+      "sourceNames": "公司财报",
+      "frequencyClaimed": "季",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "部分明确国际年度序列；非所有海外高频领先数据",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-074",
+      "section": "第七部分 海外与全球领先指标",
+      "metric": "费城半导体指数（SOX）",
+      "sourceNames": "纳斯达克",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "部分明确国际年度序列；非所有海外高频领先数据",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-075",
+      "section": "第七部分 海外与全球领先指标",
+      "metric": "美国零售库存/批发库存",
+      "sourceNames": "美国商务部",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "部分明确国际年度序列；非所有海外高频领先数据",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-076",
+      "section": "第七部分 海外与全球领先指标",
+      "metric": "全球资金流（EPFR 分国家/行业）",
+      "sourceNames": "EPFR",
+      "frequencyClaimed": "周",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "部分明确国际年度序列；非所有海外高频领先数据",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-077",
+      "section": "第七部分 海外与全球领先指标",
+      "metric": "OECD 综合领先指标、全球 PMI",
+      "sourceNames": "OECD、Markit",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "部分明确国际年度序列；非所有海外高频领先数据",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-078",
+      "section": "第七部分 海外与全球领先指标",
+      "metric": "汇率：人民币、日元、欧元、新兴市场货币",
+      "sourceNames": "外汇交易中心、Wind",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "部分明确国际年度序列；非所有海外高频领先数据",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-079",
+      "section": "第七部分 海外与全球领先指标",
+      "metric": "LME/SGX/CBOT 全球大宗定价与持仓",
+      "sourceNames": "各交易所",
+      "frequencyClaimed": "日/周",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "部分明确国际年度序列；非所有海外高频领先数据",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-080",
+      "section": "第八部分 另类数据（alpha 主战场，成本也最高）",
+      "metric": "卫星遥感：工地开工、停车场车流、油罐液位、港口船舶、农作物长势",
+      "sourceNames": "Orbital Insight、RS Metrics、国内（四象、佳格）",
+      "frequencyClaimed": "周/月",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "候选来源登记；无私人账户、支付明细或移动轨迹采集",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-081",
+      "section": "第八部分 另类数据（alpha 主战场，成本也最高）",
+      "metric": "招聘数据：岗位数、薪资、部门结构",
+      "sourceNames": "招聘平台、公司官网",
+      "frequencyClaimed": "周",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "候选来源登记；无私人账户、支付明细或移动轨迹采集",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-082",
+      "section": "第八部分 另类数据（alpha 主战场，成本也最高）",
+      "metric": "招投标数据（政府+企业）",
+      "sourceNames": "中国政府采购网、千里马、剑鱼标讯",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "候选来源登记；无私人账户、支付明细或移动轨迹采集",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-083",
+      "section": "第八部分 另类数据（alpha 主战场，成本也最高）",
+      "metric": "工业用电量（分行业/分地区）",
+      "sourceNames": "国家能源局、电力交易中心",
+      "frequencyClaimed": "月/日",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "候选来源登记；无私人账户、支付明细或移动轨迹采集",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-084",
+      "section": "第八部分 另类数据（alpha 主战场，成本也最高）",
+      "metric": "船运 AIS 与港口吞吐",
+      "sourceNames": "Clarksons、MarineTraffic",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "候选来源登记；无私人账户、支付明细或移动轨迹采集",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-085",
+      "section": "第八部分 另类数据（alpha 主战场，成本也最高）",
+      "metric": "卡车物流指数、高速货车通行量",
+      "sourceNames": "G7、满帮、交通运输部",
+      "frequencyClaimed": "周",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "候选来源登记；无私人账户、支付明细或移动轨迹采集",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-086",
+      "section": "第八部分 另类数据（alpha 主战场，成本也最高）",
+      "metric": "电商/APP：销量、DAU/MAU、用户时长、下载量",
+      "sourceNames": "魔镜、QuestMobile、蝉妈妈、点点数据",
+      "frequencyClaimed": "月/日",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "候选来源登记；无私人账户、支付明细或移动轨迹采集",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-087",
+      "section": "第八部分 另类数据（alpha 主战场，成本也最高）",
+      "metric": "移动定位：商场客流、景区客流、写字楼人流",
+      "sourceNames": "汇纳科技、极海、联通数科",
+      "frequencyClaimed": "日/周",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "候选来源登记；无私人账户、支付明细或移动轨迹采集",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-088",
+      "section": "第八部分 另类数据（alpha 主战场，成本也最高）",
+      "metric": "专利/论文/临床试验注册",
+      "sourceNames": "国家知识产权局、CDE",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "候选来源登记；无私人账户、支付明细或移动轨迹采集",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-089",
+      "section": "第八部分 另类数据（alpha 主战场，成本也最高）",
+      "metric": "信用卡/支付流水（脱敏聚合）",
+      "sourceNames": "银联、网联（合规渠道）",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "候选来源登记；无私人账户、支付明细或移动轨迹采集",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-090",
+      "section": "第八部分 另类数据（alpha 主战场，成本也最高）",
+      "metric": "产业链草根调研",
+      "sourceNames": "自建/第三方",
+      "frequencyClaimed": "周",
+      "ownerRepositories": [
+        "cn-data-adapters"
+      ],
+      "coverage": "候选来源登记；无私人账户、支付明细或移动轨迹采集",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-091",
+      "section": "第九部分 文本与非结构化（NLP 富矿）",
+      "metric": "年报 MD&A（管理层讨论）文本情绪与词频",
+      "sourceNames": "定期报告",
+      "frequencyClaimed": "年/半年",
+      "ownerRepositories": [
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "选定文本与主张对照；不提供自动真伪或因果认证",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-092",
+      "section": "第九部分 文本与非结构化（NLP 富矿）",
+      "metric": "业绩电话会纪要与问答",
+      "sourceNames": "公司 IR、第三方整理",
+      "frequencyClaimed": "季",
+      "ownerRepositories": [
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "选定文本与主张对照；不提供自动真伪或因果认证",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-093",
+      "section": "第九部分 文本与非结构化（NLP 富矿）",
+      "metric": "机构调研纪要",
+      "sourceNames": "深交所互动易、公司公告",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "选定文本与主张对照；不提供自动真伪或因果认证",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-094",
+      "section": "第九部分 文本与非结构化（NLP 富矿）",
+      "metric": "新闻情感分析（正面/负面/中性）",
+      "sourceNames": "新闻源 + NLP",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "选定文本与主张对照；不提供自动真伪或因果认证",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-095",
+      "section": "第九部分 文本与非结构化（NLP 富矿）",
+      "metric": "政策文本量化（词频、发文部门、效力层级）",
+      "sourceNames": "政府网站",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "选定文本与主张对照；不提供自动真伪或因果认证",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-096",
+      "section": "第九部分 文本与非结构化（NLP 富矿）",
+      "metric": "社交媒体舆情（雪球、股吧、微博）",
+      "sourceNames": "爬虫",
+      "frequencyClaimed": "日",
+      "ownerRepositories": [
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "选定文本与主张对照；不提供自动真伪或因果认证",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-097",
+      "section": "第九部分 文本与非结构化（NLP 富矿）",
+      "metric": "招聘 JD 文本（技术栈、岗位类型）",
+      "sourceNames": "招聘平台",
+      "frequencyClaimed": "周",
+      "ownerRepositories": [
+        "marketlens",
+        "research-workbench"
+      ],
+      "coverage": "选定文本与主张对照；不提供自动真伪或因果认证",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-098",
+      "section": "第十部分 产业链传导与结构数据",
+      "metric": "投入产出表（149部门）",
+      "sourceNames": "国家统计局",
+      "frequencyClaimed": "年（逢2/7年份更新）",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "本地表格与原表留档可用；完整投入产出平衡与传导模型未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-099",
+      "section": "第十部分 产业链传导与结构数据",
+      "metric": "各行业中间投入率、影响力系数/感应度系数",
+      "sourceNames": "由投入产出表自算",
+      "frequencyClaimed": "年",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "本地表格与原表留档可用；完整投入产出平衡与传导模型未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-100",
+      "section": "第十部分 产业链传导与结构数据",
+      "metric": "资金流量表、资产负债表（分部门）",
+      "sourceNames": "国家统计局",
+      "frequencyClaimed": "年",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "本地表格与原表留档可用；完整投入产出平衡与传导模型未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-101",
+      "section": "第十部分 产业链传导与结构数据",
+      "metric": "工业产能利用率（分行业）",
+      "sourceNames": "国家统计局",
+      "frequencyClaimed": "季",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "本地表格与原表留档可用；完整投入产出平衡与传导模型未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    },
+    {
+      "id": "panorama-102",
+      "section": "第十部分 产业链传导与结构数据",
+      "metric": "各行业库存周期位置",
+      "sourceNames": "由 PMI 分项 + 统计局数据自算",
+      "frequencyClaimed": "月",
+      "ownerRepositories": [
+        "cn-data-adapters",
+        "macro-dashboard-engine"
+      ],
+      "coverage": "本地表格与原表留档可用；完整投入产出平衡与传导模型未实现",
+      "currentValue": null,
+      "unit": null,
+      "availableAt": null,
+      "sourceVersion": null,
+      "rightsStatus": "not-assessed",
+      "acquisitionStatus": "candidate-not-collected",
+      "definitionReviewRequired": true,
+      "leadLagMonths": null
+    }
+  ],
+  "industryCatalog": "industry-indicators.json",
+  "limitations": [
+    "全景是跟踪需求目录，不把所有章节标成已实现或已采集",
+    "领先月份、alpha贡献及一致预期驱动并非普遍保证，未编码为确定因果关系",
+    "复合指标须先拆定义、范围、单位、期间与版本，频率是清单声明",
+    "一致预期、商业价格、匿名支付或移动数据只能按合法授权与用途处理；当前不自动连接账户",
+    "投入产出表维度、竞争型/非竞争型、基本表/延长表与统计年必须来自选用版本；不固定149部门或每年更新"
+  ]
+}

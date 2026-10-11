@@ -39,3 +39,5 @@ include SHARED_CODE.json
 recursive-include tools *.py
 
 include USAGE.md
+
+include PANORAMA.md
