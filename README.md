@@ -58,3 +58,6 @@ Windows运行 `Start-Demo.cmd`，也可执行 `python try_demo.py`；Linux/macOS
 ## 本地校验与行业地区资料
 
 [契约合并与旧命令迁移](CONTRACT_MIGRATION.md) · [城市、分省、行业目录与运行成本](REGIONAL_DATA.md)。
+
+
+开发维护见[共享组件总表](SHARED_COMPONENTS.md)：固定副本哈希与跨仓遗漏检测分开检查，用户使用本仓不要求其他仓库。
