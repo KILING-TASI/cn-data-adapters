@@ -73,3 +73,9 @@ cn-data-adapters source-archive capture --input examples/regional-portal-request
 ```
 
 源目录不是完整数值数据库；统计期、单位、修订版本和数据权利仍逐项核对。官方域名依据：[国家统计局主页](https://www.stats.gov.cn/)。
+
+## 申万31行业候选跟踪项
+
+新增[指标目录](catalogs/industry-indicators.json)，覆盖31行业、275条候选跟踪项。分类代码与指数代码分开；频率是原清单声明，单位、发布滞后与当前数值未核项保留未知。官方统计、公司披露和数据商授权逐项处理，不把行业代理当作公司利润或全行业事实。部分产量项关联2023/2024年鉴年度选定数据，不能冒充月度最新数据。
+
+清单中的北美半导体BB值按[SEMI当前说明](https://www.semi.org/en/products-services/market-data/equipment/billings-report)标为已停更历史系列；与设备销售额分开，不列入当前月频必采项。政府门户31个域名与官方外链核对，24个响应取得、7个访问失败；尚未把门户HTML转换成结构化数值。

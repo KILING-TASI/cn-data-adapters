@@ -22,4 +22,4 @@ include = ["cn_data_adapters*"]
 
 "share/cn-data-adapters/examples" = ["examples/regional-portal-request.json", "examples/tables-teaching.json", "examples/resident-income-request.json", "examples/resident-income-mapping.json", "examples/worldbank-population-request.json", "examples/housing-request.json", "examples/nbs-provincial-request.json", "examples/yearbook-2025-coverage-summary.json", "examples/source-capabilities-local-baseline.json", "examples/yearbook-population-selected.json", "examples/yearbook-C03-09-selected.json", "examples/yearbook-C13-12-selected.json"]
 
-"share/cn-data-adapters/catalogs" = ["catalogs/industry-coverage.json", "catalogs/regional-statistics-portals.json"]
+"share/cn-data-adapters/catalogs" = ["catalogs/industry-indicators.json", "catalogs/industry-coverage.json", "catalogs/regional-statistics-portals.json"]
