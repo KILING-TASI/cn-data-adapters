@@ -2,7 +2,7 @@
 name: cn-data-adapters
 description: 采集限定基金净值、沪深股票或ETF日线，留存原始响应、标准化已有资料并冻结重放；也支持年鉴全章节原表留档、官方发布HTML表格提取、显式观察表映射和官方URL响应留档；也可离线校验已有标准净值和观察表。
 metadata:
-  version: 0.4.1
+  version: 0.4.2
 license: MIT
 ---
 
