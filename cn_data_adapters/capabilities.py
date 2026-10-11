@@ -42,7 +42,10 @@ def review(spec):
         changes=switch.get('methodologyChanges')
         if not isinstance(changes,list) or not changes or any(not isinstance(x,str) or not x.strip() for x in changes):raise ValueError('跨源切换须逐项说明口径差异')
         switches.append(dict(switch,equivalenceCertified=False,automaticFallback=False))
-    return {'methodVersion':'source-capabilities/1','conclusion':f"登记{len(rows)}项来源；能力登记不代表本次已经取数，跨源切换不自动视为口径等价。",'sources':rows,'switches':switches,'humanRows':[[r['id'],r['implementation']+'；'+r['reviewStatus']+'；新鲜度'+r['freshness']] for r in rows],'limitations':['来源能力与取得成功分别登记；未知时间不补为当前','公开访问不授予再分发权利，保留逐源rightsNote','日期窗口由使用场景声明，不统一设置新鲜度标准','不同复权、单位、统计范围和修订口径的来源不静默拼接']}
+    implementation={'implemented':'入口已实现','partial':'部分实现','catalog-only':'仅登记目录'}
+    statuses={'available':'已取得限定资料','empty':'返回空资料','failed':'取得失败','unauthorized':'缺少授权','missing':'本轮未提供取得状态','after-cutoff':'截止后资料'}
+    freshness={'unknown':'窗口或观察日期未知','stale':'超过声明窗口','within-declared-window':'在声明窗口内'}
+    return {'methodVersion':'source-capabilities/1','conclusion':f"登记{len(rows)}项来源；能力登记不代表本次已经取数，跨源切换不自动视为口径等价。",'sources':rows,'switches':switches,'humanRows':[[r['provider'],implementation[r['implementation']]+'；'+statuses[r['reviewStatus']]+'；时效：'+freshness[r['freshness']]] for r in rows],'limitations':['来源能力与取得成功分别登记；未知时间不补为当前','公开访问不授予再分发权利，保留逐源用途范围说明','日期窗口由使用场景声明，不统一设置新鲜度标准','不同复权、单位、统计范围和修订口径的来源不静默拼接']}
 
 def main(argv=None):
     import argparse,sys

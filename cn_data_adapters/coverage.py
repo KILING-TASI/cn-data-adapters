@@ -54,7 +54,7 @@ def review(snapshot, root, numeric_reviews=None):
     chapter_rows=[]
     for chapter in sorted({r['chapter'] for r in result},key=lambda x:(isinstance(x,str),str(x).zfill(2))):
         group=[r for r in result if r['chapter']==chapter]
-        chapter_rows.append([str(chapter),f"目录{len(group)}；原件摘要匹配{sum(r['integrity']=='bytes-matched' for r in group)}；部分数值核验{sum(r['numericReview'] is not None for r in group)}"])
+        chapter_rows.append(['附录' if chapter=='appendix' else '第'+str(chapter)+'章',f"目录{len(group)}；原件摘要匹配{sum(r['integrity']=='bytes-matched' for r in group)}；部分数值核验{sum(r['numericReview'] is not None for r in group)}"])
     cells=sum(r['verifiedCells'] for r in numeric_reviews)
     return {'methodVersion':'yearbook-coverage/1','edition':snapshot['edition'],'conclusion':f"目录{len(result)}张表，原件摘要匹配{sum(r['integrity']=='bytes-matched' for r in result)}张；仅{len(reviewed)}张有部分数值核验，共{cells}个单元格。未认证任何全表数值覆盖。",'archiveStatusCounts':dict(statuses),'verifiedSelectedCells':cells,'fullTablesVerified':0,'tables':result,'humanRows':chapter_rows,'limitations':['原件取得不等于数值核验；部分行列不升级为整表覆盖','核验人员与方法是明确记录，不是软件原件鉴真','年鉴版次不等于观察期；首次发布和历史可得时间未知，不支持无依据的时点回测','来源图片与原文权利另行处理，不随MIT代码许可再分发']}
 
