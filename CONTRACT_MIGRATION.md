@@ -8,7 +8,7 @@ cn-data-adapters validate-table --input 你的观察表.json
 cn-data-adapters contracts demo --out-dir reports/contracts-demo
 ```
 
-数据仓也提供旧命令 `cn-research-contracts`，旧参数保持。旧独立Python包和历史发布继续保留；新代码使用 `cn_data_adapters.contracts`。不在新发行包中覆盖 `cn_research_contracts` 的Python命名空间，避免两个发行包争用同一文件。
+数据仓也提供旧命令 `cn-research-contracts`，旧参数保持。旧独立仓已退役，提交、标签和历史发行资产已保存离线备份；新安装与问题反馈统一使用数据仓。已安装的旧Python包不自动卸载；新代码使用 `cn_data_adapters.contracts`。不在新发行包中覆盖 `cn_research_contracts` 的Python命名空间，避免两个发行包争用同一文件。
 
 迁移已有环境时先保留个人资料，再在环境中卸载旧 `cn-research-contracts` 发行包，安装新版 `cn-data-adapters`；同时装两个发行包时，同名命令可能被安装顺序覆盖。最稳妥是新建独立环境。卸载代码不删除报告或冻结原件。
 
