@@ -2,6 +2,16 @@
 
 当前安装与教学入口见[首页](README.md)，资料准备见[BEGINNER](BEGINNER.md)。历史下载说明见[版本记录](CHANGELOG.md)。以下保留具体命令、方法、样本和限制，历史案例按各自日期阅读。
 
+## 数据入口
+
+| 想取得什么 | 安装后入口 | 当前结果范围 |
+|---|---|---|
+| 年鉴各章节及国际附录 | `cn-data-adapters yearbook --help` | 目录与限定原表留档，图片尚未数值化 |
+| 官方HTML发布表格 | `cn-data-adapters bulletin --help` | 单元格提取与明确映射；不猜单位/统计期 |
+| 国际年度序列 | `cn-data-adapters worldbank --help` | WDI指定指标/地区/年度与冻结回放 |
+| 沪深股票、ETF日行情 | `cn-data-adapters market --help` | 限定日线、未知成交单位保留 |
+| 其他官方公开资料 | `cn-data-adapters source-archive --help` | 明确URL原始响应，不等于专用接口接通 |
+
 ## 输入与结果
 
 标准化记录使用 `cn-research-collection/1.0`，声明请求、数据、单位、来源、取得时间、重放时间、覆盖与未知原因。
