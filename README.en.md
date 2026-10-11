@@ -21,3 +21,5 @@ Each repository works independently; optional cross-repository calls need explic
 ## Yearbooks and official statistics
 
 See [YEARBOOK.md](YEARBOOK.md) for all-chapter yearbook discovery, bounded original-table archives and explicit HTML cell mappings. Archived images are not structured numerical observations.
+
+[Chinese overview](README.md) · [Detailed commands](USAGE.md) · [Input preparation](BEGINNER.md) · [Version history](CHANGELOG.md).
