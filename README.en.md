@@ -4,7 +4,7 @@ Acquire bounded fund NAV and SSE/SZSE stock or ETF daily responses, replay froze
 
 [中文说明](README.md) · [Release v0.4.2](https://github.com/KILING-TASI/cn-data-adapters/releases/tag/v0.4.2) · [Skill instructions](SKILL.md) · [Input preparation](BEGINNER.md)
 
-Current release: **regular release**. Python **3.10+**. Base runtime dependencies: none.
+Current release: **v0.4.2 · regular release**. Python **3.10+**. Base runtime dependencies: none.
 
 ## First run
 
