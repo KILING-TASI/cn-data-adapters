@@ -1,0 +1,10 @@
+{
+  "countries": [
+    "CHN",
+    "USA",
+    "JPN"
+  ],
+  "indicator": "NY.GDP.MKTP.KD.ZG",
+  "start": 2022,
+  "end": 2024
+}

@@ -46,7 +46,7 @@ def main(argv=None):
     if argv and argv[0] in ('validate','validate-table'):
         from .contracts.__main__ import main as validate_main
         return validate_main(argv)
-    routes={'housing':'housing','nbs':'nbs','measure':'measure','inventory':'inventory','contracts':'contracts.__main__','yearbook':'yearbook','bulletin':'bulletin','worldbank':'worldbank','market':'market','source-archive':'source_archive','tables':'tables','coverage':'coverage','capabilities':'capabilities'}
+    routes={'tail-risk-import':'tail_import','match':'matching','housing':'housing','nbs':'nbs','measure':'measure','inventory':'inventory','contracts':'contracts.__main__','yearbook':'yearbook','bulletin':'bulletin','worldbank':'worldbank','market':'market','source-archive':'source_archive','tables':'tables','coverage':'coverage','capabilities':'capabilities'}
     if argv and argv[0] in routes:
         from importlib import import_module
         return import_module('.'+routes[argv[0]],__package__).main(argv[1:])

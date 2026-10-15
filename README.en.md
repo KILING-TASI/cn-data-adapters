@@ -2,13 +2,13 @@
 
 Acquire bounded fund NAV and SSE/SZSE stock or ETF daily responses, replay frozen bytes, and normalize explicitly mapped local tables. Official-page capture is separate from a validated structured data API.
 
-[中文说明](README.md) · [Release v0.4.2](https://github.com/KILING-TASI/cn-data-adapters/releases/tag/v0.4.2) · [Skill instructions](SKILL.md) · [Input preparation](BEGINNER.md)
+[中文说明](README.md) · [Release v0.4.3](https://github.com/KILING-TASI/cn-data-adapters/releases/tag/v0.4.3) · [Skill instructions](SKILL.md) · [Input preparation](BEGINNER.md)
 
-Current release: **v0.4.2 · regular release**. Python **3.10+**. Base runtime dependencies: none.
+Current release: **v0.4.3 · regular release**. Python **3.10+**. Base runtime dependencies: none.
 
 ## First run
 
-Download the [complete source ZIP](https://github.com/KILING-TASI/cn-data-adapters/releases/download/v0.4.2/cn-data-adapters-v0.4.2-source.zip), extract it and enter the directory containing `try_demo.py`:
+Download the [complete source ZIP](https://github.com/KILING-TASI/cn-data-adapters/releases/download/v0.4.3/cn-data-adapters-v0.4.3-source.zip), extract it and enter the directory containing `try_demo.py`:
 
 ```console
 python try_demo.py --no-open --out-dir reports/first-demo

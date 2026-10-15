@@ -18,23 +18,7 @@ def request(spec):
     if any(type(spec[x]) is not int for x in ('start','end')) or not 1960<=spec['start']<=spec['end']<=datetime.now(timezone.utc).year: raise ValueError('年度范围不符')
     return dict(spec)
 
-def parse(raw,spec,page):
-    obj=json.loads(raw.decode('utf-8-sig'),object_pairs_hook=unique,parse_float=str,parse_constant=reject_constant)
-    if not isinstance(obj,list) or len(obj)!=2 or not isinstance(obj[0],dict) or not isinstance(obj[1],list): raise ValueError('不是WDI分页数据；可能是错误响应')
-    meta,data=obj
-    pages=int(meta['pages']);total=int(meta['total'])
-    if int(meta['page'])!=page or not 1<=pages<=10 or not 0<=total<=50000: raise ValueError('分页元数据不符或超限')
-    records=[]
-    for row in data:
-        code=row['countryiso3code'];period=row['date'];indicator=row['indicator']
-        if code not in spec['countries'] or indicator['id']!=spec['indicator'] or not re.fullmatch('[0-9]{4}',period) or not spec['start']<=int(period)<=spec['end']: raise ValueError('记录地区、指标或年度不符合请求')
-        value=row['value']
-        if value is not None:
-            if isinstance(value,bool):raise ValueError('数值不能是布尔值')
-            value=Decimal(str(value))
-            if not value.is_finite(): raise ValueError('数值必须有限')
-        records.append(dict(indicatorId=indicator['id'],indicatorName=indicator['value'],regionCode=code,regionName=row['country']['value'],period=period,value=None if value is None else str(value),unit=row.get('unit') or None,unknownReason='来源值为空' if value is None else None,footnote=row.get('footnote'),regionClassification='not-verified'))
-    return meta,records
+from .wdi_core import parse
 
 def main(argv=None):
     for stream in (sys.stdout,sys.stderr):

@@ -3,7 +3,7 @@ requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "cn-data-adapters"
-version = "0.4.2"
+version = "0.4.3"
 description = "研究资料采集与储备：净值、日行情、年鉴原表、官方发布表格、国际年度序列及冻结回放。"
 requires-python = ">=3.10"
 dependencies = []

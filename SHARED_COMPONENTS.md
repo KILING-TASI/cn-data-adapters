@@ -1,6 +1,6 @@
 # 共享组件总表
 
-覆盖12个活跃仓的Git跟踪Python文件；统一UTF-8、LF及BOM口径。排除tests/test/build/dist及test_文件，非空短入口也登记。
+检查范围扩为15个活跃仓的Git跟踪Python文件；统一UTF-8、LF及BOM口径。排除tests/test/build/dist及test_文件，非空短入口也登记。
 
 仅用于开发和发布审阅。用户单仓运行无需其他仓或网络；固定副本不要求跟随权威源最新版。更新前核对方法、正反例与许可。哈希不证明语义等价，也不授予第三方数据权利。
 
@@ -24,3 +24,7 @@
 | cn-data-adapters/cn_data_adapters/contracts/collection.py | e2f4aafefdab | portfolio-decision-engine/src/portfolio_engine/nav_collection/_contract.py<br>research-workbench/scripts/nav_collection/_contract.py<br>cn-data-adapters/cn_data_adapters/contracts/collection.py |
 | research-workbench/modules/bjx-newshare-toolkit/scripts/compare_original_versions.py | e384f9c4e91c | bjx-ipo-engine/vendor/compare_original_versions.py<br>research-workbench/modules/bjx-newshare-toolkit/scripts/compare_original_versions.py |
 | cn-data-adapters/cn_data_adapters/housing_model.py | f6e13afdde95 | macro-dashboard-engine/scripts/housing_model.py<br>cn-data-adapters/cn_data_adapters/housing_model.py |
+
+## 2026-10-15固定组件增补
+
+数据仓维护 matching.py、wdi_core.py、response_archive.py。尾部风险Skill携带固定版本，登记于双方SHARED_CODE.json，运行时不导入兄弟仓。PUBLIC_VALIDATION.json和tools/verify_public_validation.py在15仓分别登记真实公开底稿、混合教学或缺口；通过不等于真实投资效果验收。因子仓与PDE已冻结的兼容副本补入清单，不替换旧算法。

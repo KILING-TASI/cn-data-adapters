@@ -72,8 +72,23 @@ jobs:
           path: repos/cn-etf-rotation-engine
           repository: KILING-TASI/cn-etf-rotation-engine
           ref: main
+      - uses: actions/checkout@v4
+        with:
+          path: repos/a-share-tail-risk
+          repository: KILING-TASI/a-share-tail-risk
+          ref: main
+      - uses: actions/checkout@v4
+        with:
+          path: repos/oil-tanker-research
+          repository: KILING-TASI/oil-tanker-research
+          ref: main
+      - uses: actions/checkout@v4
+        with:
+          path: repos/factor-research
+          repository: KILING-TASI/factor-research
+          ref: main
       - run: python repos/cn-data-adapters/tools/test_shared_governance.py
-      - run: python repos/cn-data-adapters/tools/check_shared_inventory.py repos/bjx-ipo-engine repos/cn-financial-reconcile repos/cn-fund-lookthrough repos/cn-market-rules repos/convertible-bond-engine repos/macro-dashboard-engine repos/marketlens repos/portfolio-decision-engine repos/research-workbench repos/cn-data-adapters repos/cn-reits-research repos/cn-etf-rotation-engine --output shared-inventory.json
+      - run: python repos/cn-data-adapters/tools/check_shared_inventory.py repos/bjx-ipo-engine repos/cn-financial-reconcile repos/cn-fund-lookthrough repos/cn-market-rules repos/convertible-bond-engine repos/macro-dashboard-engine repos/marketlens repos/portfolio-decision-engine repos/research-workbench repos/cn-data-adapters repos/cn-reits-research repos/cn-etf-rotation-engine repos/a-share-tail-risk repos/oil-tanker-research repos/factor-research --output shared-inventory.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:

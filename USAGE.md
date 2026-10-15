@@ -79,3 +79,11 @@ cn-data-adapters source-archive capture --input examples/regional-portal-request
 新增[指标目录](catalogs/industry-indicators.json)，覆盖31行业、275条候选跟踪项。分类代码与指数代码分开；频率是原清单声明，单位、发布滞后与当前数值未核项保留未知。官方统计、公司披露和数据商授权逐项处理，不把行业代理当作公司利润或全行业事实。部分产量项关联2023/2024年鉴年度选定数据，不能冒充月度最新数据。
 
 清单中的北美半导体BB值按[SEMI当前说明](https://www.semi.org/en/products-services/market-data/equipment/billings-report)标为已停更历史系列；与设备销售额分开，不列入当前月频必采项。政府门户31个域名与官方外链核对，24个响应取得、7个访问失败；尚未把门户HTML转换成结构化数值。
+
+## 严格匹配与尾部风险观察表桥
+
+`cn-data-adapters match --input 配对记录.json` 核对标的、份额、频率、期间、单位、币种、口径和真实公布时间。核心由本仓维护，尾部风险Skill带固定副本；没有模糊名称合并、自动外汇转换或历史发布日期补造。
+
+`cn-data-adapters tail-risk-import --input assets或context.json --out-dir 新目录` 导入assets-v1/context-v1，生成原输入副本、observations.json和receipt.json。格式校验截止时点用实际取得时点，原研究截止日另存receipt；availableAt/publishedAt未知保持null，不能把今天取得的资料认证成过去已知。
+
+原始响应归档协议 research-response-archive/1 保存每次URL、响应字节、SHA256和失败，重放仅读冻结文件并复核摘要；无网络回退，不认证来源真实性。原始行情资料仅本地留存，代码MIT不授予数据转载权。
